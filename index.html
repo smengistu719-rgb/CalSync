@@ -1,0 +1,2806 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CalSync - Ethiopian Calendar Converter, Age Calculator, World Time &amp; Holidays</title>
+  <meta name="description" content="Free Ethiopian ⇄ Gregorian ⇄ Hijri date converter, exact age and duration calculator, date math, world time by country, Ethiopian clock, holidays and fasts. Works offline.">
+  <meta property="og:title" content="CalSync - Ethiopian Calendar Converter &amp; World Time">
+  <meta property="og:description" content="Convert dates, calculate exact age, compare world time by country, and find Ethiopian holidays and fasts.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#059669">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"CalSync","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Ethiopian calendar converter, age calculator, date math, world time and holidays."}</script>
+  
+  <!-- PWA Theme Color & Meta Tags -->
+  <meta name="theme-color" content="#0f172a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="CalSync">
+  <meta name="description" content="Offline-first multi-calendar suite featuring batch date conversion, exact age calculator, Ethiopian clock converter, holiday finder, and Excel automation.">
+
+  <style>/* Tailwind CSS (pre-built) */
+*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.container{width:100%}@media (min-width:640px){.container{max-width:640px}}@media (min-width:768px){.container{max-width:768px}}@media (min-width:1024px){.container{max-width:1024px}}@media (min-width:1280px){.container{max-width:1280px}}@media (min-width:1536px){.container{max-width:1536px}}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}.pointer-events-none{pointer-events:none}.pointer-events-auto{pointer-events:auto}.fixed{position:fixed}.relative{position:relative}.sticky{position:sticky}.bottom-5{bottom:1.25rem}.right-5{right:1.25rem}.top-0{top:0}.z-10{z-index:10}.z-40{z-index:40}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:.25rem}.mb-3{margin-bottom:.75rem}.mb-4{margin-bottom:1rem}.ml-2{margin-left:.5rem}.mt-4{margin-top:1rem}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.table{display:table}.grid{display:grid}.hidden{display:none}.h-10{height:2.5rem}.h-16{height:4rem}.h-2{height:.5rem}.h-2\.5{height:.625rem}.h-3{height:.75rem}.h-3\.5{height:.875rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-full{height:100%}.max-h-\[460px\]{max-height:460px}.min-h-full{min-height:100%}.w-10{width:2.5rem}.w-12{width:3rem}.w-2{width:.5rem}.w-2\.5{width:.625rem}.w-24{width:6rem}.w-3{width:.75rem}.w-3\.5{width:.875rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-9{width:2.25rem}.w-full{width:100%}.min-w-\[200px\]{min-width:200px}.min-w-\[220px\]{min-width:220px}.min-w-max{min-width:-moz-max-content;min-width:max-content}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-4xl{max-width:56rem}.max-w-6xl{max-width:72rem}.max-w-7xl{max-width:80rem}.flex-1{flex:1 1 0%}.flex-shrink-0{flex-shrink:0}.border-collapse{border-collapse:collapse}.translate-y-2{--tw-translate-y:0.5rem}.translate-y-2,.translate-y-4{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-y-4{--tw-translate-y:1rem}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(.4,0,.6,1) infinite}@keyframes spin{to{transform:rotate(1turn)}}.animate-spin{animation:spin 1s linear infinite}.cursor-pointer{cursor:pointer}.resize-y{resize:vertical}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:.25rem}.gap-1\.5{gap:.375rem}.gap-2{gap:.5rem}.gap-3{gap:.75rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.gap-6{gap:1.5rem}.gap-x-6{-moz-column-gap:1.5rem;column-gap:1.5rem}.gap-y-1{row-gap:.25rem}.space-x-1>:not([hidden])~:not([hidden]){--tw-space-x-reverse:0;margin-right:calc(.25rem*var(--tw-space-x-reverse));margin-left:calc(.25rem*(1 - var(--tw-space-x-reverse)))}.space-x-1\.5>:not([hidden])~:not([hidden]){--tw-space-x-reverse:0;margin-right:calc(.375rem*var(--tw-space-x-reverse));margin-left:calc(.375rem*(1 - var(--tw-space-x-reverse)))}.space-x-2>:not([hidden])~:not([hidden]){--tw-space-x-reverse:0;margin-right:calc(.5rem*var(--tw-space-x-reverse));margin-left:calc(.5rem*(1 - var(--tw-space-x-reverse)))}.space-x-3>:not([hidden])~:not([hidden]){--tw-space-x-reverse:0;margin-right:calc(.75rem*var(--tw-space-x-reverse));margin-left:calc(.75rem*(1 - var(--tw-space-x-reverse)))}.space-y-1>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.25rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.25rem*var(--tw-space-y-reverse))}.space-y-2>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.5rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.5rem*var(--tw-space-y-reverse))}.space-y-3>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.75rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.75rem*var(--tw-space-y-reverse))}.space-y-4>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem*var(--tw-space-y-reverse))}.space-y-5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem*var(--tw-space-y-reverse))}.space-y-6>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem*var(--tw-space-y-reverse))}.divide-y>:not([hidden])~:not([hidden]){--tw-divide-y-reverse:0;border-top-width:calc(1px*(1 - var(--tw-divide-y-reverse)));border-bottom-width:calc(1px*var(--tw-divide-y-reverse))}.divide-slate-100>:not([hidden])~:not([hidden]){--tw-divide-opacity:1;border-color:rgb(241 245 249/var(--tw-divide-opacity,1))}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.whitespace-nowrap{white-space:nowrap}.rounded{border-radius:.25rem}.rounded-2xl{border-radius:1rem}.rounded-\[10px\]{border-radius:10px}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:.5rem}.rounded-xl{border-radius:.75rem}.border{border-width:1px}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-amber-500\/20{border-color:rgba(245,158,11,.2)}.border-amber-500\/40{border-color:rgba(245,158,11,.4)}.border-amber-800\/50{border-color:rgba(146,64,14,.5)}.border-emerald-200{--tw-border-opacity:1;border-color:rgb(167 243 208/var(--tw-border-opacity,1))}.border-emerald-500\/20{border-color:rgba(16,185,129,.2)}.border-emerald-500\/30{border-color:rgba(16,185,129,.3)}.border-indigo-500\/30{border-color:rgba(99,102,241,.3)}.border-indigo-800\/50{border-color:rgba(55,48,163,.5)}.border-slate-100{--tw-border-opacity:1;border-color:rgb(241 245 249/var(--tw-border-opacity,1))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240/var(--tw-border-opacity,1))}.border-slate-200\/60{border-color:rgba(226,232,240,.6)}.border-slate-300{--tw-border-opacity:1;border-color:rgb(203 213 225/var(--tw-border-opacity,1))}.border-slate-800{--tw-border-opacity:1;border-color:rgb(30 41 59/var(--tw-border-opacity,1))}.bg-amber-500\/10{background-color:rgba(245,158,11,.1)}.bg-amber-600{--tw-bg-opacity:1;background-color:rgb(217 119 6/var(--tw-bg-opacity,1))}.bg-amber-600\/80{background-color:rgba(217,119,6,.8)}.bg-blue-500{--tw-bg-opacity:1;background-color:rgb(59 130 246/var(--tw-bg-opacity,1))}.bg-blue-500\/10{background-color:rgba(59,130,246,.1)}.bg-emerald-100{--tw-bg-opacity:1;background-color:rgb(209 250 229/var(--tw-bg-opacity,1))}.bg-emerald-50{--tw-bg-opacity:1;background-color:rgb(236 253 245/var(--tw-bg-opacity,1))}.bg-emerald-500{--tw-bg-opacity:1;background-color:rgb(16 185 129/var(--tw-bg-opacity,1))}.bg-emerald-500\/10{background-color:rgba(16,185,129,.1)}.bg-emerald-500\/20{background-color:rgba(16,185,129,.2)}.bg-emerald-600{--tw-bg-opacity:1;background-color:rgb(5 150 105/var(--tw-bg-opacity,1))}.bg-emerald-600\/80{background-color:rgba(5,150,105,.8)}.bg-indigo-500\/20{background-color:rgba(99,102,241,.2)}.bg-indigo-600{--tw-bg-opacity:1;background-color:rgb(79 70 229/var(--tw-bg-opacity,1))}.bg-purple-500\/15{background-color:rgba(168,85,247,.15)}.bg-red-100{--tw-bg-opacity:1;background-color:rgb(254 226 226/var(--tw-bg-opacity,1))}.bg-red-50\/50{background-color:hsla(0,86%,97%,.5)}.bg-red-500\/10{background-color:rgba(239,68,68,.1)}.bg-red-600{--tw-bg-opacity:1;background-color:rgb(220 38 38/var(--tw-bg-opacity,1))}.bg-slate-100{--tw-bg-opacity:1;background-color:rgb(241 245 249/var(--tw-bg-opacity,1))}.bg-slate-200{--tw-bg-opacity:1;background-color:rgb(226 232 240/var(--tw-bg-opacity,1))}.bg-slate-300{--tw-bg-opacity:1;background-color:rgb(203 213 225/var(--tw-bg-opacity,1))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252/var(--tw-bg-opacity,1))}.bg-slate-800{--tw-bg-opacity:1;background-color:rgb(30 41 59/var(--tw-bg-opacity,1))}.bg-slate-900{--tw-bg-opacity:1;background-color:rgb(15 23 42/var(--tw-bg-opacity,1))}.bg-teal-500{--tw-bg-opacity:1;background-color:rgb(20 184 166/var(--tw-bg-opacity,1))}.bg-teal-500\/10{background-color:rgba(20,184,166,.1)}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.bg-white\/80{background-color:hsla(0,0%,100%,.8)}.bg-white\/90{background-color:hsla(0,0%,100%,.9)}.bg-gradient-to-br{background-image:linear-gradient(to bottom right,var(--tw-gradient-stops))}.bg-gradient-to-r{background-image:linear-gradient(to right,var(--tw-gradient-stops))}.bg-gradient-to-tr{background-image:linear-gradient(to top right,var(--tw-gradient-stops))}.from-amber-900{--tw-gradient-from:#78350f var(--tw-gradient-from-position);--tw-gradient-to:rgba(120,53,15,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-amber-950\/30{--tw-gradient-from:rgba(69,26,3,.3) var(--tw-gradient-from-position);--tw-gradient-to:rgba(69,26,3,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-emerald-600{--tw-gradient-from:#059669 var(--tw-gradient-from-position);--tw-gradient-to:rgba(5,150,105,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-emerald-900\/10{--tw-gradient-from:rgba(6,78,59,.1) var(--tw-gradient-from-position);--tw-gradient-to:rgba(6,78,59,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-indigo-900{--tw-gradient-from:#312e81 var(--tw-gradient-from-position);--tw-gradient-to:rgba(49,46,129,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-indigo-900\/10{--tw-gradient-from:rgba(49,46,129,.1) var(--tw-gradient-from-position);--tw-gradient-to:rgba(49,46,129,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-slate-900{--tw-gradient-from:#0f172a var(--tw-gradient-from-position);--tw-gradient-to:rgba(15,23,42,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.via-amber-500{--tw-gradient-to:rgba(245,158,11,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),#f59e0b var(--tw-gradient-via-position),var(--tw-gradient-to)}.via-amber-600{--tw-gradient-to:rgba(217,119,6,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),#d97706 var(--tw-gradient-via-position),var(--tw-gradient-to)}.via-amber-800{--tw-gradient-to:rgba(146,64,14,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),#92400e var(--tw-gradient-via-position),var(--tw-gradient-to)}.via-amber-900\/10{--tw-gradient-to:rgba(120,53,15,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),rgba(120,53,15,.1) var(--tw-gradient-via-position),var(--tw-gradient-to)}.via-indigo-800{--tw-gradient-to:rgba(55,48,163,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),#3730a3 var(--tw-gradient-via-position),var(--tw-gradient-to)}.via-purple-900\/10{--tw-gradient-to:rgba(88,28,135,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),rgba(88,28,135,.1) var(--tw-gradient-via-position),var(--tw-gradient-to)}.via-slate-800{--tw-gradient-to:rgba(30,41,59,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),#1e293b var(--tw-gradient-via-position),var(--tw-gradient-to)}.to-amber-600{--tw-gradient-to:#d97706 var(--tw-gradient-to-position)}.to-amber-900\/10{--tw-gradient-to:rgba(120,53,15,.1) var(--tw-gradient-to-position)}.to-indigo-950{--tw-gradient-to:#1e1b4b var(--tw-gradient-to-position)}.to-red-500{--tw-gradient-to:#ef4444 var(--tw-gradient-to-position)}.to-red-600{--tw-gradient-to:#dc2626 var(--tw-gradient-to-position)}.to-red-900\/10{--tw-gradient-to:rgba(127,29,29,.1) var(--tw-gradient-to-position)}.to-slate-900{--tw-gradient-to:#0f172a var(--tw-gradient-to-position)}.to-slate-900\/10{--tw-gradient-to:rgba(15,23,42,.1) var(--tw-gradient-to-position)}.bg-clip-text{-webkit-background-clip:text;background-clip:text}.p-0\.5{padding:.125rem}.p-2{padding:.5rem}.p-3{padding:.75rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.px-1{padding-left:.25rem;padding-right:.25rem}.px-1\.5{padding-left:.375rem;padding-right:.375rem}.px-2{padding-left:.5rem;padding-right:.5rem}.px-2\.5{padding-left:.625rem;padding-right:.625rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-4{padding-left:1rem;padding-right:1rem}.py-0\.5{padding-top:.125rem;padding-bottom:.125rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-1\.5{padding-top:.375rem;padding-bottom:.375rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.pb-2{padding-bottom:.5rem}.pt-2{padding-top:.5rem}.pt-3{padding-top:.75rem}.pt-4{padding-top:1rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.font-mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:.75rem;line-height:1rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-relaxed{line-height:1.625}.tracking-tight{letter-spacing:-.025em}.tracking-wider{letter-spacing:.05em}.tracking-widest{letter-spacing:.1em}.text-amber-200{--tw-text-opacity:1;color:rgb(253 230 138/var(--tw-text-opacity,1))}.text-amber-400{--tw-text-opacity:1;color:rgb(251 191 36/var(--tw-text-opacity,1))}.text-amber-500{--tw-text-opacity:1;color:rgb(245 158 11/var(--tw-text-opacity,1))}.text-amber-600{--tw-text-opacity:1;color:rgb(217 119 6/var(--tw-text-opacity,1))}.text-amber-700{--tw-text-opacity:1;color:rgb(180 83 9/var(--tw-text-opacity,1))}.text-amber-800{--tw-text-opacity:1;color:rgb(146 64 14/var(--tw-text-opacity,1))}.text-blue-300{--tw-text-opacity:1;color:rgb(147 197 253/var(--tw-text-opacity,1))}.text-blue-400{--tw-text-opacity:1;color:rgb(96 165 250/var(--tw-text-opacity,1))}.text-blue-600{--tw-text-opacity:1;color:rgb(37 99 235/var(--tw-text-opacity,1))}.text-blue-700{--tw-text-opacity:1;color:rgb(29 78 216/var(--tw-text-opacity,1))}.text-emerald-400{--tw-text-opacity:1;color:rgb(52 211 153/var(--tw-text-opacity,1))}.text-emerald-500{--tw-text-opacity:1;color:rgb(16 185 129/var(--tw-text-opacity,1))}.text-emerald-600{--tw-text-opacity:1;color:rgb(5 150 105/var(--tw-text-opacity,1))}.text-emerald-700{--tw-text-opacity:1;color:rgb(4 120 87/var(--tw-text-opacity,1))}.text-emerald-800{--tw-text-opacity:1;color:rgb(6 95 70/var(--tw-text-opacity,1))}.text-indigo-200{--tw-text-opacity:1;color:rgb(199 210 254/var(--tw-text-opacity,1))}.text-indigo-400{--tw-text-opacity:1;color:rgb(129 140 248/var(--tw-text-opacity,1))}.text-indigo-500{--tw-text-opacity:1;color:rgb(99 102 241/var(--tw-text-opacity,1))}.text-indigo-600{--tw-text-opacity:1;color:rgb(79 70 229/var(--tw-text-opacity,1))}.text-indigo-800{--tw-text-opacity:1;color:rgb(55 48 163/var(--tw-text-opacity,1))}.text-purple-700{--tw-text-opacity:1;color:rgb(126 34 206/var(--tw-text-opacity,1))}.text-red-500{--tw-text-opacity:1;color:rgb(239 68 68/var(--tw-text-opacity,1))}.text-red-600{--tw-text-opacity:1;color:rgb(220 38 38/var(--tw-text-opacity,1))}.text-red-700{--tw-text-opacity:1;color:rgb(185 28 28/var(--tw-text-opacity,1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225/var(--tw-text-opacity,1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184/var(--tw-text-opacity,1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139/var(--tw-text-opacity,1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105/var(--tw-text-opacity,1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85/var(--tw-text-opacity,1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59/var(--tw-text-opacity,1))}.text-slate-900{--tw-text-opacity:1;color:rgb(15 23 42/var(--tw-text-opacity,1))}.text-teal-600{--tw-text-opacity:1;color:rgb(13 148 136/var(--tw-text-opacity,1))}.text-teal-700{--tw-text-opacity:1;color:rgb(15 118 110/var(--tw-text-opacity,1))}.text-transparent{color:transparent}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.opacity-0{opacity:0}.shadow-inner{--tw-shadow:inset 0 2px 4px 0 rgba(0,0,0,.05);--tw-shadow-colored:inset 0 2px 4px 0 var(--tw-shadow-color)}.shadow-inner,.shadow-lg{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color)}.shadow-md{--tw-shadow:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color),0 2px 4px -2px var(--tw-shadow-color)}.shadow-md,.shadow-sm{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgba(0,0,0,.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color)}.outline-none{outline:2px solid transparent;outline-offset:2px}.blur{--tw-blur:blur(8px)}.blur,.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur{--tw-backdrop-blur:blur(8px)}.backdrop-blur,.backdrop-filter{-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-colors{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.duration-200{transition-duration:.2s}.duration-300{transition-duration:.3s}.after\:absolute:after{content:var(--tw-content);position:absolute}.after\:left-\[2px\]:after{content:var(--tw-content);left:2px}.after\:top-\[2px\]:after{content:var(--tw-content);top:2px}.after\:h-4:after{content:var(--tw-content);height:1rem}.after\:w-4:after{content:var(--tw-content);width:1rem}.after\:rounded-full:after{content:var(--tw-content);border-radius:9999px}.after\:border:after{content:var(--tw-content);border-width:1px}.after\:border-slate-300:after{content:var(--tw-content);--tw-border-opacity:1;border-color:rgb(203 213 225/var(--tw-border-opacity,1))}.after\:bg-white:after{content:var(--tw-content);--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.after\:transition-all:after{content:var(--tw-content);transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.after\:content-\[\'\'\]:after{--tw-content:"";content:var(--tw-content)}.hover\:bg-amber-500\/20:hover{background-color:rgba(245,158,11,.2)}.hover\:bg-amber-600:hover{--tw-bg-opacity:1;background-color:rgb(217 119 6/var(--tw-bg-opacity,1))}.hover\:bg-amber-700:hover{--tw-bg-opacity:1;background-color:rgb(180 83 9/var(--tw-bg-opacity,1))}.hover\:bg-emerald-600:hover{--tw-bg-opacity:1;background-color:rgb(5 150 105/var(--tw-bg-opacity,1))}.hover\:bg-emerald-700:hover{--tw-bg-opacity:1;background-color:rgb(4 120 87/var(--tw-bg-opacity,1))}.hover\:bg-indigo-700:hover{--tw-bg-opacity:1;background-color:rgb(67 56 202/var(--tw-bg-opacity,1))}.hover\:bg-red-500\/20:hover{background-color:rgba(239,68,68,.2)}.hover\:bg-slate-100:hover{--tw-bg-opacity:1;background-color:rgb(241 245 249/var(--tw-bg-opacity,1))}.hover\:bg-slate-200:hover{--tw-bg-opacity:1;background-color:rgb(226 232 240/var(--tw-bg-opacity,1))}.hover\:bg-slate-300:hover{--tw-bg-opacity:1;background-color:rgb(203 213 225/var(--tw-bg-opacity,1))}.hover\:bg-slate-50:hover{--tw-bg-opacity:1;background-color:rgb(248 250 252/var(--tw-bg-opacity,1))}.hover\:bg-slate-900:hover{--tw-bg-opacity:1;background-color:rgb(15 23 42/var(--tw-bg-opacity,1))}.hover\:text-red-500:hover{--tw-text-opacity:1;color:rgb(239 68 68/var(--tw-text-opacity,1))}.hover\:text-red-600:hover{--tw-text-opacity:1;color:rgb(220 38 38/var(--tw-text-opacity,1))}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.focus\:ring-amber-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(245 158 11/var(--tw-ring-opacity,1))}.focus\:ring-emerald-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(16 185 129/var(--tw-ring-opacity,1))}.focus\:ring-indigo-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(99 102 241/var(--tw-ring-opacity,1))}.peer:checked~.peer-checked\:bg-amber-600{--tw-bg-opacity:1;background-color:rgb(217 119 6/var(--tw-bg-opacity,1))}.peer:checked~.peer-checked\:after\:translate-x-full:after{content:var(--tw-content);--tw-translate-x:100%;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.peer:checked~.peer-checked\:after\:border-white:after{content:var(--tw-content);--tw-border-opacity:1;border-color:rgb(255 255 255/var(--tw-border-opacity,1))}.peer:focus~.peer-focus\:outline-none{outline:2px solid transparent;outline-offset:2px}.dark\:block:is(.dark *){display:block}.dark\:hidden:is(.dark *){display:none}.dark\:divide-slate-800:is(.dark *)>:not([hidden])~:not([hidden]){--tw-divide-opacity:1;border-color:rgb(30 41 59/var(--tw-divide-opacity,1))}.dark\:border-emerald-800:is(.dark *){--tw-border-opacity:1;border-color:rgb(6 95 70/var(--tw-border-opacity,1))}.dark\:border-slate-700:is(.dark *){--tw-border-opacity:1;border-color:rgb(51 65 85/var(--tw-border-opacity,1))}.dark\:border-slate-800:is(.dark *){--tw-border-opacity:1;border-color:rgb(30 41 59/var(--tw-border-opacity,1))}.dark\:border-slate-800\/60:is(.dark *){border-color:rgba(30,41,59,.6)}.dark\:border-slate-800\/80:is(.dark *){border-color:rgba(30,41,59,.8)}.dark\:bg-emerald-950:is(.dark *){--tw-bg-opacity:1;background-color:rgb(2 44 34/var(--tw-bg-opacity,1))}.dark\:bg-emerald-950\/50:is(.dark *){background-color:rgba(2,44,34,.5)}.dark\:bg-red-950:is(.dark *){--tw-bg-opacity:1;background-color:rgb(69 10 10/var(--tw-bg-opacity,1))}.dark\:bg-red-950\/20:is(.dark *){background-color:rgba(69,10,10,.2)}.dark\:bg-slate-700:is(.dark *){--tw-bg-opacity:1;background-color:rgb(51 65 85/var(--tw-bg-opacity,1))}.dark\:bg-slate-800:is(.dark *){--tw-bg-opacity:1;background-color:rgb(30 41 59/var(--tw-bg-opacity,1))}.dark\:bg-slate-800\/60:is(.dark *){background-color:rgba(30,41,59,.6)}.dark\:bg-slate-800\/80:is(.dark *){background-color:rgba(30,41,59,.8)}.dark\:bg-slate-900:is(.dark *){--tw-bg-opacity:1;background-color:rgb(15 23 42/var(--tw-bg-opacity,1))}.dark\:bg-slate-900\/80:is(.dark *){background-color:rgba(15,23,42,.8)}.dark\:bg-slate-900\/90:is(.dark *){background-color:rgba(15,23,42,.9)}.dark\:bg-slate-950:is(.dark *){--tw-bg-opacity:1;background-color:rgb(2 6 23/var(--tw-bg-opacity,1))}.dark\:from-emerald-950\/40:is(.dark *){--tw-gradient-from:rgba(2,44,34,.4) var(--tw-gradient-from-position);--tw-gradient-to:rgba(2,44,34,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.dark\:from-indigo-950\/40:is(.dark *){--tw-gradient-from:rgba(30,27,75,.4) var(--tw-gradient-from-position);--tw-gradient-to:rgba(30,27,75,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.dark\:via-amber-950\/20:is(.dark *){--tw-gradient-to:rgba(69,26,3,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),rgba(69,26,3,.2) var(--tw-gradient-via-position),var(--tw-gradient-to)}.dark\:via-purple-950\/30:is(.dark *){--tw-gradient-to:rgba(59,7,100,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),rgba(59,7,100,.3) var(--tw-gradient-via-position),var(--tw-gradient-to)}.dark\:to-red-950\/30:is(.dark *){--tw-gradient-to:rgba(69,10,10,.3) var(--tw-gradient-to-position)}.dark\:to-slate-900\/40:is(.dark *){--tw-gradient-to:rgba(15,23,42,.4) var(--tw-gradient-to-position)}.dark\:text-amber-300:is(.dark *){--tw-text-opacity:1;color:rgb(252 211 77/var(--tw-text-opacity,1))}.dark\:text-amber-400:is(.dark *){--tw-text-opacity:1;color:rgb(251 191 36/var(--tw-text-opacity,1))}.dark\:text-blue-300:is(.dark *){--tw-text-opacity:1;color:rgb(147 197 253/var(--tw-text-opacity,1))}.dark\:text-blue-400:is(.dark *){--tw-text-opacity:1;color:rgb(96 165 250/var(--tw-text-opacity,1))}.dark\:text-emerald-300:is(.dark *){--tw-text-opacity:1;color:rgb(110 231 183/var(--tw-text-opacity,1))}.dark\:text-emerald-400:is(.dark *){--tw-text-opacity:1;color:rgb(52 211 153/var(--tw-text-opacity,1))}.dark\:text-indigo-300:is(.dark *){--tw-text-opacity:1;color:rgb(165 180 252/var(--tw-text-opacity,1))}.dark\:text-indigo-400:is(.dark *){--tw-text-opacity:1;color:rgb(129 140 248/var(--tw-text-opacity,1))}.dark\:text-purple-300:is(.dark *){--tw-text-opacity:1;color:rgb(216 180 254/var(--tw-text-opacity,1))}.dark\:text-red-300:is(.dark *){--tw-text-opacity:1;color:rgb(252 165 165/var(--tw-text-opacity,1))}.dark\:text-red-400:is(.dark *){--tw-text-opacity:1;color:rgb(248 113 113/var(--tw-text-opacity,1))}.dark\:text-slate-100:is(.dark *){--tw-text-opacity:1;color:rgb(241 245 249/var(--tw-text-opacity,1))}.dark\:text-slate-200:is(.dark *){--tw-text-opacity:1;color:rgb(226 232 240/var(--tw-text-opacity,1))}.dark\:text-slate-300:is(.dark *){--tw-text-opacity:1;color:rgb(203 213 225/var(--tw-text-opacity,1))}.dark\:text-slate-400:is(.dark *){--tw-text-opacity:1;color:rgb(148 163 184/var(--tw-text-opacity,1))}.dark\:text-slate-500:is(.dark *){--tw-text-opacity:1;color:rgb(100 116 139/var(--tw-text-opacity,1))}.dark\:text-slate-700:is(.dark *){--tw-text-opacity:1;color:rgb(51 65 85/var(--tw-text-opacity,1))}.dark\:text-teal-300:is(.dark *){--tw-text-opacity:1;color:rgb(94 234 212/var(--tw-text-opacity,1))}.dark\:text-teal-400:is(.dark *){--tw-text-opacity:1;color:rgb(45 212 191/var(--tw-text-opacity,1))}.dark\:after\:border-slate-600:is(.dark *):after{content:var(--tw-content);--tw-border-opacity:1;border-color:rgb(71 85 105/var(--tw-border-opacity,1))}.dark\:hover\:bg-slate-600:hover:is(.dark *){--tw-bg-opacity:1;background-color:rgb(71 85 105/var(--tw-bg-opacity,1))}.dark\:hover\:bg-slate-700:hover:is(.dark *){--tw-bg-opacity:1;background-color:rgb(51 65 85/var(--tw-bg-opacity,1))}.dark\:hover\:bg-slate-800:hover:is(.dark *){--tw-bg-opacity:1;background-color:rgb(30 41 59/var(--tw-bg-opacity,1))}.dark\:hover\:bg-slate-800\/50:hover:is(.dark *){background-color:rgba(30,41,59,.5)}@media (min-width:640px){.sm\:block{display:block}.sm\:flex{display:flex}.sm\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.sm\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.sm\:grid-cols-5{grid-template-columns:repeat(5,minmax(0,1fr))}.sm\:flex-row{flex-direction:row}.sm\:items-center{align-items:center}.sm\:space-x-2>:not([hidden])~:not([hidden]){--tw-space-x-reverse:0;margin-right:calc(.5rem*var(--tw-space-x-reverse));margin-left:calc(.5rem*(1 - var(--tw-space-x-reverse)))}.sm\:space-x-3>:not([hidden])~:not([hidden]){--tw-space-x-reverse:0;margin-right:calc(.75rem*var(--tw-space-x-reverse));margin-left:calc(.75rem*(1 - var(--tw-space-x-reverse)))}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:text-4xl{font-size:2.25rem;line-height:2.5rem}.sm\:text-sm{font-size:.875rem;line-height:1.25rem}.sm\:text-xl{font-size:1.25rem;line-height:1.75rem}}@media (min-width:768px){.md\:col-span-2{grid-column:span 2/span 2}.md\:flex{display:flex}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.md\:flex-row{flex-direction:row}.md\:items-center{align-items:center}}@media (min-width:1024px){.lg\:col-span-4{grid-column:span 4/span 4}.lg\:col-span-8{grid-column:span 8/span 8}.lg\:grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))}.lg\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.lg\:px-8{padding-left:2rem;padding-right:2rem}}@media (min-width:1280px){.xl\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}}
+  </style>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Ethiopic:wght@400;600;700&display=swap');
+    
+    body {
+      font-family: 'Inter', 'Noto Sans Ethiopic', system-ui, -apple-system, sans-serif;
+    }
+
+    .amharic-text {
+      font-family: 'Noto Sans Ethiopic', sans-serif;
+    }
+
+    /* Custom scrollbars */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: rgba(15, 23, 42, 0.1);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(100, 116, 139, 0.4);
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(100, 116, 139, 0.7);
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+    }
+    .dark .glass-card {
+      background: rgba(30, 41, 59, 0.85);
+      backdrop-filter: blur(12px);
+    }
+
+    .animate-pulse-subtle {
+      animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 min-h-full flex flex-col transition-colors duration-200">
+
+  <!-- Top Navigation Header -->
+  <header class="sticky top-0 z-40 w-full border-b border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-slate-900/90 backdrop-blur">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      
+      <!-- Logo & App Title -->
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-600 via-amber-500 to-red-500 p-0.5 shadow-md flex-shrink-0">
+          <div class="w-full h-full bg-slate-900 rounded-[10px] flex items-center justify-center text-white font-bold text-lg">
+            📅
+          </div>
+        </div>
+        <div>
+          <div class="flex items-center space-x-2">
+            <h1 class="font-bold text-lg sm:text-xl tracking-tight bg-gradient-to-r from-emerald-600 via-amber-600 to-red-600 bg-clip-text text-transparent">
+              CalSync
+            </h1>
+            <span class="text-xs px-2 py-0.5 rounded-full bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 font-medium">
+              Multi-Tool Suite
+            </span>
+          </div>
+          <p class="text-xs text-slate-500 dark:text-slate-400 hidden sm:block">Ethiopian & Multi-Calendar Utility Platform</p>
+        </div>
+      </div>
+
+      <!-- Action Tools & Status -->
+      <div class="flex items-center space-x-2 sm:space-x-3">
+        
+        <!-- Live Ethiopian Clock Pill -->
+        <div class="hidden md:flex items-center space-x-2 px-3 py-1 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-700 dark:text-amber-400 text-xs font-semibold">
+          <svg class="w-3.5 h-3.5 animate-spin" style="animation-duration: 10s;" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="12" cy="12" r="10" />
+  <path d="M12 6v6l4 2" />
+</svg>
+          <span id="headerLiveEthClock">--:--:--</span>
+        </div>
+
+        <!-- Offline Badge Status -->
+        <div id="offlineBadge" class="hidden sm:flex items-center space-x-1.5 px-2.5 py-1 rounded-lg text-xs font-medium bg-emerald-50 dark:bg-emerald-950/50 text-emerald-700 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-800">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span id="offlineBadgeText">Offline Ready</span>
+        </div>
+
+        <!-- Install PWA Button -->
+        <button id="installPwaBtn" class="hidden items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-emerald-600 hover:bg-emerald-700 text-white shadow-sm transition">
+          <svg class="w-3.5 h-3.5" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 15V3" />
+  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+  <path d="m7 10 5 5 5-5" />
+</svg>
+          <span>Install App</span>
+        </button>
+
+        <!-- Dark/Light Theme Toggle -->
+        <button id="themeToggleBtn" aria-label="Toggle Dark Mode" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition">
+          <svg class="w-4 h-4 dark:hidden" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" />
+</svg>
+          <svg class="w-4 h-4 hidden dark:block" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="12" cy="12" r="4" />
+  <path d="M12 2v2" />
+  <path d="M12 20v2" />
+  <path d="m4.93 4.93 1.41 1.41" />
+  <path d="m17.66 17.66 1.41 1.41" />
+  <path d="M2 12h2" />
+  <path d="M20 12h2" />
+  <path d="m6.34 17.66-1.41 1.41" />
+  <path d="m19.07 4.93-1.41 1.41" />
+</svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-slate-100 dark:border-slate-800/60 overflow-x-auto">
+      <nav class="flex space-x-1 sm:space-x-2 py-2 min-w-max" aria-label="Tabs">
+        <button id="tabBatch" onclick="switchTab('batch')" class="tab-btn px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold flex items-center space-x-1.5 bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border border-emerald-500/20">
+          <svg class="w-4 h-4" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M15 3v18" />
+  <rect width="18" height="18" x="3" y="3" rx="2" />
+  <path d="M21 9H3" />
+  <path d="M21 15H3" />
+</svg>
+          <span>Batch Series</span>
+        </button>
+
+        <button id="tabSingle" onclick="switchTab('single')" class="tab-btn px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium flex items-center space-x-1.5 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800">
+          <svg class="w-4 h-4" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M8 2v3" />
+  <path d="M16 2v3" />
+  <rect x="3" y="3" width="18" height="18" rx="2" />
+  <path d="M3 9h18" />
+</svg>
+          <span>Quick Converter</span>
+        </button>
+
+        <button id="tabAge" onclick="switchTab('age')" class="tab-btn px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium flex items-center space-x-1.5 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800">
+          <svg class="w-4 h-4 text-indigo-500" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 22h14" />
+  <path d="M5 2h14" />
+  <path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22" />
+  <path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2" />
+</svg>
+          <span>Age & Duration</span>
+          <span class="px-1.5 py-0.2 text-[10px] bg-indigo-600 text-white rounded-full font-bold">New</span>
+        </button>
+
+        <button id="tabTime" onclick="switchTab('time')" class="tab-btn px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium flex items-center space-x-1.5 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800">
+          <svg class="w-4 h-4 text-amber-500" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="12" cy="12" r="10" />
+  <path d="M12 6v6l4 2" />
+</svg>
+          <span>Eth Clock System</span>
+          <span class="px-1.5 py-0.2 text-[10px] bg-amber-600 text-white rounded-full font-bold">New</span>
+        </button>
+
+        <button id="tabWorld" onclick="switchTab('world')" class="tab-btn px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium flex items-center space-x-1.5 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800"><span>🌍</span><span>World Time</span></button>
+        <button id="tabHolidays" onclick="switchTab('holidays')" class="tab-btn px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium flex items-center space-x-1.5 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800">
+          <svg class="w-4 h-4 text-emerald-500" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" />
+  <path d="M20 2v4" />
+  <path d="M22 4h-4" />
+  <circle cx="4" cy="20" r="2" />
+</svg>
+          <span>Holidays & Fasts</span>
+        </button>
+
+        <button id="tabMath" onclick="switchTab('math')" class="tab-btn px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium flex items-center space-x-1.5 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800">
+          <svg class="w-4 h-4" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <rect width="16" height="20" x="4" y="2" rx="2" />
+  <line x1="8" x2="16" y1="6" y2="6" />
+  <line x1="16" x2="16" y1="14" y2="18" />
+  <path d="M16 10h.01" />
+  <path d="M12 10h.01" />
+  <path d="M8 10h.01" />
+  <path d="M12 14h.01" />
+  <path d="M8 14h.01" />
+  <path d="M12 18h.01" />
+  <path d="M8 18h.01" />
+</svg>
+          <span>Date Math</span>
+        </button>
+
+        <button id="tabExcel" onclick="switchTab('excel')" class="tab-btn px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium flex items-center space-x-1.5 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800">
+          <svg class="w-4 h-4" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m18 16 4-4-4-4" />
+  <path d="m6 8-4 4 4 4" />
+  <path d="m14.5 4-5 16" />
+</svg>
+          <span>VBA & Formulas</span>
+        </button>
+
+        <button id="tabGuide" onclick="switchTab('guide')" class="tab-btn px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium flex items-center space-x-1.5 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800">
+          <svg class="w-4 h-4" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 5v16" />
+  <path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z" />
+</svg>
+          <span>Ge'ez Studio & Rules</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+    <div id="todayStrip" class="mb-4 p-3 rounded-2xl glass-card border border-slate-200 dark:border-slate-800 text-xs sm:text-sm font-semibold flex flex-wrap gap-x-6 gap-y-1 justify-center"></div>
+
+    <!-- TAB 1: BATCH DATE SERIES CONVERTER -->
+    <section id="contentBatch" class="space-y-6">
+      
+      <!-- Top Overview Banner -->
+      <div class="p-4 rounded-2xl bg-gradient-to-r from-slate-900 via-slate-800 to-indigo-950 text-white shadow-lg border border-slate-800">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div class="space-y-1">
+            <h2 class="text-lg font-bold flex items-center gap-2">
+              <svg class="w-5 h-5 text-amber-400" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" />
+  <path d="M20 2v4" />
+  <path d="M22 4h-4" />
+  <circle cx="4" cy="20" r="2" />
+</svg>
+              Batch Convert Date Series (Excel & CSV Column Repair)
+            </h2>
+            <p class="text-xs text-slate-300 max-w-2xl">
+              Paste dates copied directly from Excel or CSV. CalSync auto-detects formats, swaps flipped Day/Month misinterpretations, and calculates exact conversions between Ethiopian, Gregorian, and Hijri calendars.
+            </p>
+          </div>
+          <div class="flex items-center gap-2">
+            <button onclick="loadSampleData('ethiopian')" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-emerald-600/80 hover:bg-emerald-600 text-white transition flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+  <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+  <path d="M8 13h2" />
+  <path d="M14 13h2" />
+  <path d="M8 17h2" />
+  <path d="M14 17h2" />
+</svg>
+              Sample Eth Dates
+            </button>
+            <button onclick="loadSampleData('flipped')" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-amber-600/80 hover:bg-amber-600 text-white transition flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m16 3 4 4-4 4" />
+  <path d="M20 7H4" />
+  <path d="m8 21-4-4 4-4" />
+  <path d="M4 17h16" />
+</svg>
+              Sample Flipped Excel
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Batch Configuration Bar -->
+      <div class="p-5 rounded-2xl glass-card border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          
+          <!-- Source Calendar -->
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 dark:text-slate-400 mb-1">1. Source Calendar</label>
+            <select id="batchSourceCal" onchange="processBatch()" class="w-full px-3 py-2 rounded-xl text-sm bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 font-medium focus:ring-2 focus:ring-emerald-500 outline-none">
+              <option value="ethiopian" selected>Ethiopian Calendar (የኢትዮጵያ ዘመን አቆጣጠር)</option>
+              <option value="gregorian">Gregorian Calendar (European / US)</option>
+              <option value="hijri">Hijri Calendar (Islamic)</option>
+            </select>
+          </div>
+
+          <!-- Target Calendar -->
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 dark:text-slate-400 mb-1">2. Target Calendar</label>
+            <select id="batchTargetCal" onchange="processBatch()" class="w-full px-3 py-2 rounded-xl text-sm bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 font-medium focus:ring-2 focus:ring-emerald-500 outline-none">
+              <option value="gregorian" selected>Gregorian Calendar (European / US)</option>
+              <option value="ethiopian">Ethiopian Calendar (የኢትዮጵያ ዘመን አቆጣጠር)</option>
+              <option value="hijri">Hijri Calendar (Islamic)</option>
+            </select>
+          </div>
+
+          <!-- Source Format Hint -->
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 dark:text-slate-400 mb-1">3. Input Date Format</label>
+            <select id="batchInputFormat" onchange="processBatch()" class="w-full px-3 py-2 rounded-xl text-sm bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 font-medium focus:ring-2 focus:ring-emerald-500 outline-none">
+              <option value="auto" selected>✨ Auto-Detect (DD/MM/YYYY or YYYY-MM-DD)</option>
+              <option value="DMY">DD/MM/YYYY (Day first - e.g. 28/10/2018)</option>
+              <option value="MDY">MM/DD/YYYY (Month first - US standard)</option>
+              <option value="YMD">YYYY-MM-DD (ISO format - e.g. 2018-10-28)</option>
+            </select>
+          </div>
+
+          <!-- Target Output Format -->
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 dark:text-slate-400 mb-1">4. Output Display Format</label>
+            <select id="batchOutputFormat" onchange="processBatch()" class="w-full px-3 py-2 rounded-xl text-sm bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 font-medium focus:ring-2 focus:ring-emerald-500 outline-none">
+              <option value="DMY" selected>DD/MM/YYYY (Standard)</option>
+              <option value="MDY">MM/DD/YYYY (US Format)</option>
+              <option value="YMD">YYYY-MM-DD (ISO Format)</option>
+              <option value="TEXT_EN">Long Text (e.g., 28 Tikimt 2011 / 05 Nov 2018)</option>
+              <option value="TEXT_AM">Amharic Text (e.g., 28 ጥቅምት 2011 ዓ.ም)</option>
+              <option value="GEEZ">Amharic + Ge'ez Numerals (፳፰ ጥቅምት ፪፻፲፩)</option>
+            </select>
+          </div>
+
+        </div>
+
+        <!-- Special Fixing Controls -->
+        <div class="pt-3 border-t border-slate-200 dark:border-slate-800 flex flex-wrap items-center justify-between gap-3">
+          <div class="flex items-center space-x-3">
+            <label class="inline-flex items-center cursor-pointer">
+              <input type="checkbox" id="swapMonthDayToggle" onchange="processBatch()" class="sr-only peer">
+              <div class="w-9 h-5 bg-slate-300 peer-focus:outline-none rounded-full peer dark:bg-slate-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:after:border-slate-600 peer-checked:bg-amber-600 relative"></div>
+              <span class="ml-2 text-xs font-semibold text-slate-700 dark:text-slate-300 flex items-center gap-1">
+                <svg class="w-3.5 h-3.5 text-amber-500" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m16 3 4 4-4 4" />
+  <path d="M20 7H4" />
+  <path d="m8 21-4-4 4-4" />
+  <path d="M4 17h16" />
+</svg>
+                Swap Day & Month (Fix Excel's flipped dates e.g. 5/11 -> 11/5)
+              </span>
+            </label>
+          </div>
+
+          <div class="text-xs text-slate-500 dark:text-slate-400">
+            Tip: Press <kbd class="px-1.5 py-0.5 rounded bg-slate-200 dark:bg-slate-800 font-mono text-[10px]">Ctrl+V</kbd> to paste directly from Excel
+          </div>
+        </div>
+      </div>
+
+      <!-- Batch Input & Output Workspace -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        
+        <!-- Input Column -->
+        <div class="lg:col-span-4 space-y-3">
+          <div class="flex items-center justify-between">
+            <label class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 flex items-center gap-1.5">
+              <svg class="w-4 h-4 text-emerald-500" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M11 14h10" />
+  <path d="M16 4h2a2 2 0 0 1 2 2v1.344" />
+  <path d="m17 18 4-4-4-4" />
+  <path d="M8 4H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 1.793-1.113" />
+  <rect x="8" y="2" width="8" height="4" rx="1" />
+</svg>
+              Paste Column / Series
+            </label>
+            <button onclick="clearBatchInput()" class="text-xs text-red-500 hover:text-red-600 font-medium">Clear All</button>
+          </div>
+
+          <textarea id="batchInputText" oninput="processBatch()" rows="14" placeholder="Paste dates here (one per line)...&#10;&#10;Examples:&#10;28/10/2018&#10;29/10/2018&#10;01/11/2018&#10;11/05/2018&#10;2018-11-05" class="w-full p-3 text-sm font-mono bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-2xl focus:ring-2 focus:ring-emerald-500 outline-none resize-y leading-relaxed shadow-inner"></textarea>
+
+          <div class="flex items-center gap-2">
+            <label class="flex-1 cursor-pointer px-3 py-2 rounded-xl text-xs font-semibold bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 transition text-center flex items-center justify-center gap-1.5">
+              <svg class="w-3.5 h-3.5" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 3v12" />
+  <path d="m17 8-5-5-5 5" />
+  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+</svg>
+              <span>Upload CSV / TXT</span>
+              <input type="file" id="batchFileInput" accept=".csv, .txt" onchange="handleFileUpload(event)" class="hidden">
+            </label>
+            <button onclick="processBatch()" class="px-4 py-2 rounded-xl text-xs font-semibold bg-emerald-600 hover:bg-emerald-700 text-white transition flex items-center gap-1.5 shadow-sm">
+              <svg class="w-3.5 h-3.5" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" />
+  <path d="M21 3v5h-5" />
+  <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" />
+  <path d="M8 16H3v5" />
+</svg>
+              <span>Convert Now</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Output Column & Table -->
+        <div class="lg:col-span-8 space-y-3">
+          
+          <!-- Results Header & Export Tools -->
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-slate-100 dark:bg-slate-800/60 p-3 rounded-2xl border border-slate-200 dark:border-slate-800">
+            <div class="flex items-center space-x-3 text-xs">
+              <span id="statTotalRows" class="font-bold text-slate-700 dark:text-slate-300">0 Rows</span>
+              <span class="text-slate-300 dark:text-slate-700">|</span>
+              <span id="statSuccess" class="text-emerald-600 dark:text-emerald-400 font-medium">0 Converted</span>
+              <span class="text-slate-300 dark:text-slate-700">|</span>
+              <span id="statErrors" class="text-red-500 font-medium">0 Issues</span>
+            </div>
+
+            <div class="flex items-center gap-2">
+              <button onclick="copyConvertedColumnOnly()" class="px-3 py-1.5 rounded-xl text-xs font-semibold bg-emerald-600 hover:bg-emerald-700 text-white transition shadow-sm flex items-center gap-1">
+                <svg class="w-3.5 h-3.5" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+  <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
+</svg>
+                <span>Copy Column for Excel</span>
+              </button>
+              <button onclick="exportBatchCSV()" class="px-3 py-1.5 rounded-xl text-xs font-semibold bg-slate-800 dark:bg-slate-700 hover:bg-slate-900 dark:hover:bg-slate-600 text-white transition flex items-center gap-1">
+                <svg class="w-3.5 h-3.5" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 15V3" />
+  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+  <path d="m7 10 5 5 5-5" />
+</svg>
+                <span>Export CSV</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Table Container -->
+          <div class="border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden bg-white dark:bg-slate-900 shadow-sm max-h-[460px] overflow-y-auto">
+            <table class="w-full text-left border-collapse text-xs">
+              <thead class="bg-slate-100 dark:bg-slate-800/80 sticky top-0 z-10 text-slate-600 dark:text-slate-400 uppercase tracking-wider font-semibold border-b border-slate-200 dark:border-slate-800">
+                <tr>
+                  <th class="py-2.5 px-3 w-12 text-center">#</th>
+                  <th class="py-2.5 px-3">Original Input</th>
+                  <th class="py-2.5 px-3">Parsed Date (Source)</th>
+                  <th class="py-2.5 px-3 text-emerald-600 dark:text-emerald-400 font-bold">Converted Target Date</th>
+                  <th class="py-2.5 px-3 w-24 text-center">Status</th>
+                </tr>
+              </thead>
+              <tbody id="batchTableBody" class="divide-y divide-slate-100 dark:divide-slate-800 font-mono">
+                <tr>
+                  <td colspan="5" class="py-12 text-center text-slate-400 dark:text-slate-500 italic">
+                    Paste dates into the text box on the left or upload a file to convert immediately.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- TAB 2: QUICK SINGLE CONVERTER -->
+    <section id="contentSingle" class="hidden space-y-6">
+      
+      <!-- Date Picker Input -->
+      <div class="p-6 rounded-2xl glass-card border border-slate-200 dark:border-slate-800 shadow-sm max-w-3xl mx-auto text-center space-y-4">
+        <h2 class="text-xl font-bold bg-gradient-to-r from-emerald-600 to-amber-600 bg-clip-text text-transparent">
+          Interactive Single Date Converter
+        </h2>
+        <p class="text-xs text-slate-500 dark:text-slate-400">
+          Pick any Gregorian date or adjust the buttons to view real-time synchronized dates across 5 world calendar formats.
+        </p>
+
+        <!-- Date Controls -->
+        <div class="flex flex-wrap items-center justify-center gap-3 pt-2">
+          <button onclick="shiftSingleDate(-1)" class="px-3 py-2 rounded-xl bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-xs font-semibold transition flex items-center gap-1">
+            <svg class="w-4 h-4" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m15 18-6-6 6-6" />
+</svg> -1 Day
+          </button>
+          
+          <input type="date" id="singleGregPicker" onchange="onSinglePickerChange()" class="px-4 py-2 rounded-xl text-sm font-semibold bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 shadow-inner focus:ring-2 focus:ring-emerald-500 outline-none">
+
+          <button onclick="setSingleDateToday()" class="px-3 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold transition flex items-center gap-1">
+            <svg class="w-3.5 h-3.5" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M8 2v3" />
+  <path d="M16 2v3" />
+  <rect x="3" y="3" width="18" height="18" rx="2" />
+  <path d="M3 9h18" />
+  <path d="m9 15 2 2 4-4" />
+</svg> Today
+          </button>
+
+          <button onclick="shiftSingleDate(1)" class="px-3 py-2 rounded-xl bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-xs font-semibold transition flex items-center gap-1">
+            +1 Day <svg class="w-4 h-4" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m9 18 6-6-6-6" />
+</svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Live Cards Display -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-6xl mx-auto">
+        
+        <!-- Ethiopian Calendar Card -->
+        <div class="p-5 rounded-2xl bg-gradient-to-br from-emerald-900/10 via-amber-900/10 to-red-900/10 dark:from-emerald-950/40 dark:via-amber-950/20 dark:to-red-950/30 border-2 border-emerald-500/30 shadow-md space-y-3 relative overflow-hidden">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+              Ethiopian Calendar
+            </span>
+            <span class="text-[10px] px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-800 dark:text-emerald-300 font-semibold"> Primary </span>
+          </div>
+
+          <div class="space-y-1">
+            <div id="cardEthMain" class="text-2xl font-bold tracking-tight text-slate-900 dark:text-slate-100">--</div>
+            <div id="cardEthAmharic" class="text-lg font-bold text-emerald-700 dark:text-emerald-400 amharic-text">--</div>
+            <div id="cardEthGeez" class="text-sm font-semibold text-amber-600 dark:text-amber-400 amharic-text">--</div>
+          </div>
+
+          <div class="pt-2 border-t border-slate-200/60 dark:border-slate-800/80 text-xs text-slate-600 dark:text-slate-400 flex items-center justify-between">
+            <span>Weekday: <strong id="cardEthWeekday" class="amharic-text text-slate-800 dark:text-slate-200">--</strong></span>
+            <span>Leap Status: <strong id="cardEthLeap" class="text-slate-800 dark:text-slate-200">--</strong></span>
+          </div>
+        </div>
+
+        <!-- Gregorian Calendar Card -->
+        <div class="p-5 rounded-2xl glass-card border border-slate-200 dark:border-slate-800 shadow-sm space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 flex items-center gap-1.5">
+              <span class="w-2.5 h-2.5 rounded-full bg-blue-500"></span>
+              Gregorian Calendar
+            </span>
+            <span class="text-[10px] px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-700 dark:text-blue-300 font-semibold"> Standard </span>
+          </div>
+
+          <div class="space-y-1">
+            <div id="cardGregMain" class="text-2xl font-bold tracking-tight text-slate-900 dark:text-slate-100">--</div>
+            <div id="cardGregLong" class="text-sm font-semibold text-slate-600 dark:text-slate-300">--</div>
+          </div>
+
+          <div class="pt-2 border-t border-slate-200 dark:border-slate-800 text-xs text-slate-600 dark:text-slate-400 flex items-center justify-between">
+            <span>Day of Year: <strong id="cardGregDayOfYear" class="text-slate-800 dark:text-slate-200">--</strong></span>
+            <span>Julian Day (JDN): <strong id="cardJdn" class="text-slate-800 dark:text-slate-200">--</strong></span>
+          </div>
+        </div>
+
+        <!-- Islamic / Hijri Calendar Card -->
+        <div class="p-5 rounded-2xl glass-card border border-slate-200 dark:border-slate-800 shadow-sm space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold uppercase tracking-wider text-teal-600 dark:text-teal-400 flex items-center gap-1.5">
+              <span class="w-2.5 h-2.5 rounded-full bg-teal-500"></span>
+              Islamic (Hijri)
+            </span>
+            <span class="text-[10px] px-2 py-0.5 rounded-full bg-teal-500/10 text-teal-700 dark:text-teal-300 font-semibold"> Lunar </span>
+          </div>
+
+          <div class="space-y-1">
+            <div id="cardHijriMain" class="text-2xl font-bold tracking-tight text-slate-900 dark:text-slate-100">--</div>
+            <div id="cardHijriLong" class="text-sm font-semibold text-teal-700 dark:text-teal-400">--</div>
+          </div>
+
+          <div class="pt-2 border-t border-slate-200 dark:border-slate-800 text-xs text-slate-600 dark:text-slate-400">
+            <span>Islamic Epoch AH</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- TAB 3: AGE & DAY CALCULATOR (NEW) -->
+    <section id="contentAge" class="hidden space-y-6">
+      
+      <!-- Banner -->
+      <div class="p-5 rounded-2xl bg-gradient-to-r from-indigo-900 via-indigo-800 to-slate-900 text-white shadow-lg border border-indigo-800/50">
+        <div class="space-y-1">
+          <h2 class="text-lg font-bold flex items-center gap-2">
+            <svg class="w-5 h-5 text-indigo-400" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 22h14" />
+  <path d="M5 2h14" />
+  <path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22" />
+  <path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2" />
+</svg>
+            Precise Day & Age Calculator
+          </h2>
+          <p class="text-xs text-indigo-200 max-w-3xl">
+            Calculate exact age in years, months, days, total days lived, weekday born, upcoming birthday countdown, and cross-calendar birth dates (Ethiopian & Gregorian).
+          </p>
+        </div>
+      </div>
+
+      <!-- Controls & Form -->
+      <div class="p-6 rounded-2xl glass-card border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          
+          <!-- Calendar Selector for Birth Date -->
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 dark:text-slate-400 mb-1">Birth Date System</label>
+            <select id="ageCalSystem" onchange="toggleAgeCalInput()" class="w-full px-3 py-2 rounded-xl text-sm bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 font-medium focus:ring-2 focus:ring-indigo-500 outline-none">
+              <option value="gregorian" selected>Gregorian (European / US Date)</option>
+              <option value="ethiopian">Ethiopian (የኢትዮጵያ ቀን)</option>
+            </select>
+          </div>
+
+          <!-- Birth Date Inputs -->
+          <div id="ageGregContainer" class="md:col-span-2">
+            <label class="block text-xs font-semibold text-slate-600 dark:text-slate-400 mb-1">Select Birth Date (Gregorian)</label>
+            <div class="flex items-center gap-2">
+              <input type="date" id="ageBirthPicker" onchange="calculateAge()" class="w-full px-4 py-2 rounded-xl text-sm font-semibold bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 focus:ring-2 focus:ring-indigo-500 outline-none">
+              <button onclick="setSampleBirth('1995-09-11')" class="px-3 py-2 text-xs font-semibold bg-slate-200 dark:bg-slate-800 rounded-xl hover:bg-slate-300 dark:hover:bg-slate-700 transition whitespace-nowrap">
+                Sample
+              </button>
+            </div>
+          </div>
+
+          <!-- Ethiopian Birth Date Input Group (Hidden by default) -->
+          <div id="ageEthContainer" class="hidden md:col-span-2">
+            <label class="block text-xs font-semibold text-slate-600 dark:text-slate-400 mb-1">Enter Ethiopian Birth Date (DD / MM / YYYY)</label>
+            <div class="grid grid-cols-3 gap-2">
+              <input type="number" id="ageEthDay" min="1" max="30" placeholder="Day (1-30)" oninput="calculateAge()" class="px-3 py-2 text-sm rounded-xl bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 focus:ring-2 focus:ring-indigo-500 outline-none">
+              <select id="ageEthMonth" onchange="calculateAge()" class="px-3 py-2 text-sm rounded-xl bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 focus:ring-2 focus:ring-indigo-500 outline-none">
+                <option value="1">1. Meskerem (መስከረም)</option>
+                <option value="2">2. Tikimt (ጥቅምት)</option>
+                <option value="3">3. Hidar (ኅዳር)</option>
+                <option value="4">4. Tahsas (ታኅሣሥ)</option>
+                <option value="5">5. Ter (ጥር)</option>
+                <option value="6">6. Yekatit (የካቲት)</option>
+                <option value="7">7. Megabit (መጋቢት)</option>
+                <option value="8">8. Miyazya (ሚያዝያ)</option>
+                <option value="9">9. Ginbot (ግንቦት)</option>
+                <option value="10">10. Sene (ሰኔ)</option>
+                <option value="11">11. Hamle (ሐምሌ)</option>
+                <option value="12">12. Nehase (ነሐሴ)</option>
+                <option value="13">13. Pagume (ጳጉሜ)</option>
+              </select>
+              <input type="number" id="ageEthYear" placeholder="Year (e.g. 1990)" oninput="calculateAge()" class="px-3 py-2 text-sm rounded-xl bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 focus:ring-2 focus:ring-indigo-500 outline-none">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Age Result Display Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        
+        <!-- Primary Age Summary Card -->
+        <div class="md:col-span-2 p-6 rounded-2xl bg-gradient-to-br from-indigo-900/10 via-purple-900/10 to-slate-900/10 dark:from-indigo-950/40 dark:via-purple-950/30 dark:to-slate-900/40 border-2 border-indigo-500/30 shadow-md space-y-5">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 flex items-center gap-2">
+              <svg class="w-4 h-4" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+  <circle cx="12" cy="7" r="4" />
+</svg>
+              Calculated Age Summary
+            </span>
+            <span id="ageBornDayBadge" class="text-xs px-2.5 py-1 rounded-full bg-indigo-500/20 text-indigo-800 dark:text-indigo-300 font-bold amharic-text">
+              --
+            </span>
+          </div>
+
+          <!-- Huge Age Numbers -->
+          <div class="space-y-1">
+            <div id="ageMainString" class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-slate-100 tracking-tight">
+              0 Years, 0 Months, 0 Days
+            </div>
+            <div id="ageMainAmharic" class="text-lg font-bold text-indigo-600 dark:text-indigo-400 amharic-text">
+              --
+            </div>
+            <div id="ageEthCalLine" class="text-xs font-medium text-slate-500 dark:text-slate-400 amharic-text"></div>
+          </div>
+
+          <!-- Total Life Breakdown Stats -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 border-t border-slate-200 dark:border-slate-800">
+            <div class="p-3 rounded-xl bg-white/80 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800">
+              <span class="text-[10px] font-bold text-slate-400 uppercase">Total Days</span>
+              <div id="ageTotalDays" class="text-lg font-bold text-slate-800 dark:text-slate-200">0</div>
+            </div>
+            <div class="p-3 rounded-xl bg-white/80 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800">
+              <span class="text-[10px] font-bold text-slate-400 uppercase">Total Weeks</span>
+              <div id="ageTotalWeeks" class="text-lg font-bold text-slate-800 dark:text-slate-200">0</div>
+            </div>
+            <div class="p-3 rounded-xl bg-white/80 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800">
+              <span class="text-[10px] font-bold text-slate-400 uppercase">Hours Lived</span>
+              <div id="ageTotalHours" class="text-lg font-bold text-slate-800 dark:text-slate-200">0</div>
+            </div>
+            <div class="p-3 rounded-xl bg-white/80 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800">
+              <span class="text-[10px] font-bold text-slate-400 uppercase">Minutes Lived</span>
+              <div id="ageTotalMinutes" class="text-lg font-bold text-slate-800 dark:text-slate-200">0</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Next Birthday Countdown & Dual Birth Dates Card -->
+        <div class="p-6 rounded-2xl glass-card border border-slate-200 dark:border-slate-800 shadow-sm space-y-4 flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400 flex items-center gap-1.5 mb-3">
+              <svg class="w-4 h-4" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8" />
+  <path d="M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2-1 2-1" />
+  <path d="M2 21h20" />
+  <path d="M7 8v3" />
+  <path d="M12 8v3" />
+  <path d="M17 8v3" />
+  <path d="M7 4h.01" />
+  <path d="M12 4h.01" />
+  <path d="M17 4h.01" />
+</svg>
+              Next Birthday Countdown
+            </span>
+
+            <div class="p-4 rounded-xl bg-amber-500/10 border border-amber-500/20 text-center space-y-1">
+              <div id="ageDaysToBirthday" class="text-3xl font-extrabold text-amber-600 dark:text-amber-400">0</div>
+              <div class="text-xs font-medium text-amber-800 dark:text-amber-300">Days Remaining</div>
+            </div>
+          </div>
+
+          <div class="space-y-2 pt-3 border-t border-slate-200 dark:border-slate-800 text-xs">
+            <div class="flex justify-between">
+              <span class="text-slate-500">Ethiopian Birthdate:</span>
+              <strong id="ageEthBirthDisplay" class="font-bold text-emerald-600 dark:text-emerald-400 amharic-text">--</strong>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-slate-500">Gregorian Birthdate:</span>
+              <strong id="ageGregBirthDisplay" class="font-bold text-blue-600 dark:text-blue-400">--</strong>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-slate-500">Hijri Birthdate:</span>
+              <strong id="ageHijriBirthDisplay" class="font-bold text-teal-600 dark:text-teal-400">--</strong>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- TAB 4: ETHIOPIAN TIME SYSTEM & CLOCK (NEW) -->
+    <section id="contentTime" class="hidden space-y-6">
+      
+      <div class="p-5 rounded-2xl bg-gradient-to-r from-amber-900 via-amber-800 to-slate-900 text-white shadow-lg border border-amber-800/50">
+        <div class="space-y-1">
+          <h2 class="text-lg font-bold flex items-center gap-2">
+            <svg class="w-5 h-5 text-amber-400" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="12" cy="12" r="10" />
+  <path d="M12 6v6l4 2" />
+</svg>
+            Ethiopian 12-Hour Local Time System Converter
+          </h2>
+          <p class="text-xs text-amber-200 max-w-3xl">
+            In Ethiopia, the 12-hour clock cycle starts at sunrise (6:00 AM Western = 12:00 AM Ethiopian Daytime) and sunset (6:00 PM Western = 12:00 PM Ethiopian Nighttime).
+          </p>
+        </div>
+      </div>
+
+      <!-- Live Dual Clocks Widget -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <!-- Live Western Clock -->
+        <div class="p-6 rounded-2xl glass-card border border-slate-200 dark:border-slate-800 text-center space-y-3">
+          <span class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 flex items-center justify-center gap-1.5">
+            <svg class="w-4 h-4" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="12" cy="12" r="10" />
+  <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+  <path d="M2 12h20" />
+</svg> Standard Western Time
+          </span>
+          <div id="liveWesternClock" class="text-4xl font-extrabold font-mono tracking-tight text-slate-900 dark:text-slate-100">
+            00:00:00 AM
+          </div>
+          <div id="liveWesternDate" class="text-xs text-slate-500 font-medium">
+            --
+          </div>
+        </div>
+
+        <!-- Live Ethiopian Clock -->
+        <div class="p-6 rounded-2xl bg-gradient-to-br from-amber-950/30 to-amber-900/10 border-2 border-amber-500/40 text-center space-y-3">
+          <span class="text-xs font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400 flex items-center justify-center gap-1.5">
+            <svg class="w-4 h-4" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="12" cy="12" r="4" />
+  <path d="M12 2v2" />
+  <path d="M12 20v2" />
+  <path d="m4.93 4.93 1.41 1.41" />
+  <path d="m17.66 17.66 1.41 1.41" />
+  <path d="M2 12h2" />
+  <path d="M20 12h2" />
+  <path d="m6.34 17.66-1.41 1.41" />
+  <path d="m19.07 4.93-1.41 1.41" />
+</svg> Live Ethiopian Local Time (የኢትዮጵያ ሰዓት)
+          </span>
+          <div id="liveEthiopianClock" class="text-4xl font-extrabold font-mono tracking-tight text-amber-600 dark:text-amber-400 amharic-text">
+            00:00:00
+          </div>
+          <div id="liveEthiopianClockAmharic" class="text-sm font-bold text-amber-700 dark:text-amber-300 amharic-text">
+            --
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Interactive Time Converter Tool -->
+      <div class="p-6 rounded-2xl glass-card border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
+        <h3 class="text-sm font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300 flex items-center gap-2">
+          <svg class="w-4 h-4 text-amber-500" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m16 3 4 4-4 4" />
+  <path d="M20 7H4" />
+  <path d="m8 21-4-4 4-4" />
+  <path d="M4 17h16" />
+</svg>
+          Interactive Time Converter
+        </h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+          
+          <!-- Input Time -->
+          <div class="space-y-2">
+            <label class="block text-xs font-semibold text-slate-600 dark:text-slate-400">Select Western 24-Hour Time</label>
+            <input type="time" id="timeConvertInput" onchange="convertEthTime()" value="14:30" class="w-full px-4 py-3 rounded-xl text-lg font-mono font-bold bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 focus:ring-2 focus:ring-amber-500 outline-none">
+          </div>
+
+          <!-- Converted Ethiopian Time Output Card -->
+          <div class="p-4 rounded-xl bg-amber-500/10 border border-amber-500/20 space-y-2">
+            <span class="text-xs font-bold text-amber-700 dark:text-amber-400 uppercase">Converted Ethiopian Local Time</span>
+            <div id="timeConvertEthResult" class="text-2xl font-bold text-slate-900 dark:text-slate-100">
+              ከቀኑ 8:30 ሰዓት
+            </div>
+            <p id="timeConvertEthDesc" class="text-xs text-slate-600 dark:text-slate-400">
+              8:30 Daytime (ከቀኑ)
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- TAB 5: HOLIDAYS & FASTING FINDER -->
+    <section id="contentWorld" class="hidden space-y-6">
+      <div class="p-5 rounded-2xl glass-card border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
+        <div>
+          <h2 class="text-lg font-bold">🌍 World Time, Date &amp; Day by Country</h2>
+          <p class="text-xs text-slate-600 dark:text-slate-400">Pick a source country (or any time zone) and a moment, then see the exact local time, date and weekday in every target country, with Ethiopian and Hijri dates, daylight-saving aware.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div><label class="block text-xs font-semibold text-slate-600 dark:text-slate-400 mb-1">Source country / zone</label>
+            <select id="wcSource" onchange="renderWorld()" class="w-full px-3 py-2 rounded-xl text-sm bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 font-medium outline-none"></select></div>
+          <div><label class="block text-xs font-semibold text-slate-600 dark:text-slate-400 mb-1">Source date &amp; time (blank = now, live)</label>
+            <input type="datetime-local" id="wcWhen" step="60" onchange="renderWorld()" class="w-full px-3 py-2 rounded-xl text-sm bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 font-medium outline-none"></div>
+          <div class="flex items-end gap-2">
+            <button onclick="document.getElementById('wcWhen').value='';renderWorld()" class="px-3 py-2 rounded-xl text-xs font-semibold bg-emerald-600 text-white hover:bg-emerald-700">Use live time</button>
+            <button onclick="copyWorld()" class="px-3 py-2 rounded-xl text-xs font-semibold bg-slate-200 dark:bg-slate-800">Copy results</button>
+          </div>
+        </div>
+        <div class="flex flex-wrap items-end gap-2">
+          <div class="flex-1 min-w-[220px]"><label class="block text-xs font-semibold text-slate-600 dark:text-slate-400 mb-1">Add target country / zone</label>
+            <select id="wcAdd" class="w-full px-3 py-2 rounded-xl text-sm bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 font-medium outline-none"></select></div>
+          <button onclick="wcAddTarget()" class="px-3 py-2 rounded-xl text-xs font-semibold bg-indigo-600 text-white hover:bg-indigo-700">+ Add</button>
+        </div>
+      </div>
+      <div id="wcSourceCard" class="p-4 rounded-2xl bg-emerald-500/10 border border-emerald-500/20"></div>
+      <div id="wcGrid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4"></div>
+      <p class="text-[11px] text-slate-500">Countries spanning several zones use their capital's zone; choose a city from "All time zones" for other regions. Data comes from your browser's IANA time-zone database.</p>
+    </section>
+
+    <section id="contentHolidays" class="hidden space-y-6">
+      
+      <div class="p-5 rounded-2xl glass-card border border-slate-200 dark:border-slate-800 shadow-sm space-y-3">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div>
+            <h2 class="text-lg font-bold flex items-center gap-2">
+              <svg class="w-5 h-5 text-emerald-600" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" />
+  <path d="M20 2v4" />
+  <path d="M22 4h-4" />
+  <circle cx="4" cy="20" r="2" />
+</svg>
+              Ethiopian Public Holidays & Movable Fasting Days
+            </h2>
+            <p class="text-xs text-slate-600 dark:text-slate-400">
+              Generate exact Gregorian dates for all national public holidays and Tewahedo movable fasts (Great Lent, Fasika, Epiphany, Meskel) for any selected year.
+            </p>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-2">
+            <label class="text-xs font-bold text-slate-500" for="holidayYearInput">Year (Eth):</label>
+            <button onclick="hStepYear(-1)" class="px-2 py-1.5 rounded-lg bg-slate-200 dark:bg-slate-800 text-xs font-bold" title="Previous year" aria-label="Previous year">‹</button>
+            <input type="number" id="holidayYearInput" value="2019" min="1" max="9990" onkeydown="if(event.key==='Enter')findHolidays()" class="w-24 px-3 py-1.5 rounded-xl text-sm font-bold bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 focus:ring-2 focus:ring-emerald-500 outline-none">
+            <button onclick="hStepYear(1)" class="px-2 py-1.5 rounded-lg bg-slate-200 dark:bg-slate-800 text-xs font-bold" title="Next year" aria-label="Next year">›</button>
+            <button onclick="hStepYear(0)" class="px-2 py-1.5 rounded-lg bg-slate-200 dark:bg-slate-800 text-xs font-semibold" title="Current Ethiopian year">This year</button>
+            <button onclick="findHolidays()" class="px-3 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold transition" title="Calculate all holidays and fasts for the year entered">
+              Find Dates
+            </button>
+            <button onclick="exportHolidaysICS()" class="px-3 py-1.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold transition">Add to Calendar (.ics)</button>
+            <button onclick="hOpenForm(null)" class="px-3 py-1.5 rounded-xl bg-amber-600 hover:bg-amber-700 text-white text-xs font-semibold transition">+ Add Entry</button>
+            <button onclick="hReset()" class="px-3 py-1.5 rounded-xl bg-slate-200 dark:bg-slate-800 text-xs font-semibold transition">Reset</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="hStatus" class="text-xs font-semibold text-slate-600 dark:text-slate-300 px-1" role="status"></div>
+      <div class="flex flex-wrap gap-2 items-center">
+        <input id="hSearch" type="search" placeholder="Search holidays or fasts…" oninput="renderHolidays()" class="flex-1 min-w-[200px] px-3 py-2 rounded-xl text-sm bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 outline-none">
+        <select id="hFilter" onchange="renderHolidays()" class="px-3 py-2 rounded-xl text-sm bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 outline-none">
+          <option value="all">All types</option><option value="National Holiday">National holidays</option><option value="Religious">Religious</option><option value="Fast">Fasts</option><option value="Personal">My entries</option></select>
+      </div>
+      <!-- Holiday editor -->
+      <div id="hForm" class="hidden p-5 rounded-2xl glass-card border border-amber-500/40 shadow-sm space-y-3">
+        <h3 id="hFormTitle" class="text-sm font-bold">Add entry</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+          <div><label class="block text-xs font-semibold text-slate-600 dark:text-slate-400 mb-1">Name (English) *</label><input id="hfEn" maxlength="80" class="w-full px-3 py-2 rounded-xl text-sm bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 outline-none"></div>
+          <div><label class="block text-xs font-semibold text-slate-600 dark:text-slate-400 mb-1">Name (አማርኛ)</label><input id="hfAm" maxlength="80" class="w-full px-3 py-2 rounded-xl text-sm amharic-text bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 outline-none"></div>
+          <div><label class="block text-xs font-semibold text-slate-600 dark:text-slate-400 mb-1">Type</label>
+            <select id="hfType" class="w-full px-3 py-2 rounded-xl text-sm bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 outline-none"><option>National Holiday</option><option>Religious Holiday</option><option>Religious Observance</option><option>Fast</option><option>Personal</option></select></div>
+          <div><label class="block text-xs font-semibold text-slate-600 dark:text-slate-400 mb-1">Date rule</label>
+            <select id="hfMode" onchange="hModeChange()" class="w-full px-3 py-2 rounded-xl text-sm bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 outline-none">
+              <option value="calc">Keep calculated date</option><option value="eth">Every year on Ethiopian date</option><option value="greg">Every year on Gregorian date</option><option value="once">One time (Gregorian date)</option></select></div>
+          <div id="hfDateWrap" class="grid grid-cols-3 gap-2 md:col-span-2">
+            <div><label class="block text-xs font-semibold text-slate-600 dark:text-slate-400 mb-1">Day</label><input id="hfD" type="number" min="1" max="31" class="w-full px-3 py-2 rounded-xl text-sm bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 outline-none"></div>
+            <div><label class="block text-xs font-semibold text-slate-600 dark:text-slate-400 mb-1">Month</label><select id="hfM" class="w-full px-3 py-2 rounded-xl text-sm bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 outline-none"></select></div>
+            <div id="hfYWrap"><label class="block text-xs font-semibold text-slate-600 dark:text-slate-400 mb-1">Year</label><input id="hfY" type="number" min="1" max="9999" class="w-full px-3 py-2 rounded-xl text-sm bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 outline-none"></div>
+          </div>
+          <div><label class="block text-xs font-semibold text-slate-600 dark:text-slate-400 mb-1">Duration (days)</label><input id="hfLen" type="number" min="1" max="366" value="1" class="w-full px-3 py-2 rounded-xl text-sm bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 outline-none"></div>
+        </div>
+        <div id="hfErr" class="text-xs text-red-600 font-semibold"></div>
+        <div class="flex gap-2">
+          <button onclick="hSaveForm()" class="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold">Save</button>
+          <button onclick="hCloseForm()" class="px-4 py-2 rounded-xl bg-slate-200 dark:bg-slate-800 text-xs font-semibold">Cancel</button>
+        </div>
+        <p class="text-[11px] text-slate-500">Changes are saved in this browser (local storage). Deleted built-in entries can be brought back with Reset.</p>
+      </div>
+
+      <!-- Holidays Table -->
+      <div class="border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden bg-white dark:bg-slate-900 shadow-sm">
+        <table class="w-full text-left border-collapse text-xs">
+          <thead class="bg-slate-100 dark:bg-slate-800/80 text-slate-600 dark:text-slate-400 uppercase tracking-wider font-semibold border-b border-slate-200 dark:border-slate-800">
+            <tr>
+              <th class="py-3 px-4">Holiday / Fasting Event</th>
+              <th class="py-3 px-4">Amharic Name (የበዓሉ ስም)</th>
+              <th class="py-3 px-4 font-bold text-amber-600">Ethiopian Date</th>
+              <th class="py-3 px-4 font-bold text-blue-600">Gregorian Equivalent</th>
+              <th class="py-3 px-4">Type</th>
+              <th class="py-3 px-4 text-right">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="holidaysTableBody" class="divide-y divide-slate-100 dark:divide-slate-800">
+            <!-- Dynamically populated -->
+          </tbody>
+        </table>
+      </div>
+
+    </section>
+
+    <!-- TAB 6: DATE MATH & OFFSETS -->
+    <section id="contentMath" class="hidden space-y-6">
+      
+      <div class="p-5 rounded-2xl glass-card border border-slate-200 dark:border-slate-800 shadow-sm space-y-2">
+        <h2 class="text-lg font-bold flex items-center gap-2">
+          <svg class="w-5 h-5 text-indigo-600" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <rect width="16" height="20" x="4" y="2" rx="2" />
+  <line x1="8" x2="16" y1="6" y2="6" />
+  <line x1="16" x2="16" y1="14" y2="18" />
+  <path d="M16 10h.01" />
+  <path d="M12 10h.01" />
+  <path d="M8 10h.01" />
+  <path d="M12 14h.01" />
+  <path d="M8 14h.01" />
+  <path d="M12 18h.01" />
+  <path d="M8 18h.01" />
+</svg>
+          Date Math & Duration Offset Tool
+        </h2>
+        <p class="text-xs text-slate-600 dark:text-slate-400">
+          Add or subtract days, weeks, months or years (month-end safe) to any start date to calculate deadline dates, passport expiration dates, or contract terms.
+        </p>
+      </div>
+
+      <div class="p-6 rounded-2xl glass-card border border-slate-200 dark:border-slate-800 shadow-sm space-y-4 max-w-4xl">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          
+          <!-- Start Date -->
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 dark:text-slate-400 mb-1">1. Start Date (Gregorian)</label>
+            <input type="date" id="mathStartDate" onchange="calculateDateMath()" class="w-full px-3 py-2 rounded-xl text-sm font-semibold bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 outline-none">
+          </div>
+
+          <!-- Operation -->
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 dark:text-slate-400 mb-1">2. Action</label>
+            <select id="mathOperation" onchange="calculateDateMath()" class="w-full px-3 py-2 rounded-xl text-sm bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 font-medium outline-none">
+              <option value="add" selected>➕ Add Duration (+)</option>
+              <option value="subtract">➖ Subtract Duration (-)</option>
+            </select>
+          </div>
+
+          <!-- Amount & Unit -->
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 dark:text-slate-400 mb-1">3. Amount & Unit</label>
+            <div class="flex gap-2">
+              <input type="number" id="mathAmount" value="30" min="0" step="1" oninput="calculateDateMath()" class="w-24 px-3 py-2 rounded-xl text-sm font-bold bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 outline-none">
+              <select id="mathUnit" onchange="calculateDateMath()" class="flex-1 px-3 py-2 rounded-xl text-sm bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 outline-none">
+                <option value="days" selected>Days</option>
+                <option value="weeks">Weeks</option>
+                <option value="months">Months</option>
+                <option value="years">Years</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Calendar used for month/year steps -->
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 dark:text-slate-400 mb-1">4. Months/Years Counted In</label>
+            <select id="mathCalSystem" onchange="calculateDateMath()" class="w-full px-3 py-2 rounded-xl text-sm bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 font-medium outline-none">
+              <option value="gregorian" selected>Gregorian months</option>
+              <option value="ethiopian">Ethiopian months (13)</option>
+            </select>
+          </div>
+
+        </div>
+
+        <!-- Math Results Box -->
+        <div class="mt-4 p-5 rounded-xl bg-slate-900 text-white space-y-3 border border-slate-800">
+          <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Calculated Target Date</span>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <span class="text-[10px] text-emerald-400 uppercase font-bold">Ethiopian Target Date</span>
+              <div id="mathResultEth" class="text-xl font-bold text-emerald-400 amharic-text">--</div>
+            </div>
+            <div>
+              <span class="text-[10px] text-blue-400 uppercase font-bold">Gregorian Target Date</span>
+              <div id="mathResultGreg" class="text-xl font-bold text-blue-300">--</div>
+            </div>
+          </div>
+          <div id="mathResultMeta" class="text-xs text-slate-400"></div>
+        </div>
+      </div>
+
+      <!-- Duration Between Two Dates -->
+      <div class="p-6 rounded-2xl glass-card border border-slate-200 dark:border-slate-800 shadow-sm space-y-4 max-w-4xl">
+        <h3 class="text-sm font-bold flex items-center gap-2">
+          <svg class="w-4 h-4 text-indigo-600" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z" />
+  <path d="m14.5 12.5 2-2" />
+  <path d="m11.5 9.5 2-2" />
+  <path d="m8.5 6.5 2-2" />
+  <path d="m17.5 15.5 2-2" />
+</svg>
+          Duration Between Two Dates
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-end">
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 dark:text-slate-400 mb-1">From (Gregorian)</label>
+            <input type="date" id="durStartDate" onchange="calculateDuration()" class="w-full px-3 py-2 rounded-xl text-sm font-semibold bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 outline-none">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 dark:text-slate-400 mb-1">To (Gregorian)</label>
+            <input type="date" id="durEndDate" onchange="calculateDuration()" class="w-full px-3 py-2 rounded-xl text-sm font-semibold bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 outline-none">
+          </div>
+          <label class="inline-flex items-center gap-2 text-xs font-semibold text-slate-700 dark:text-slate-300 pb-2">
+            <input type="checkbox" id="durIncludeEnd" onchange="calculateDuration()" class="rounded">
+            Include end date in count
+          </label>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-5 gap-3">
+          <div class="p-3 rounded-xl bg-white/80 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800"><span class="text-[10px] font-bold text-slate-400 uppercase">Gregorian Y/M/D</span><div id="durGregYMD" class="text-sm font-bold">--</div></div>
+          <div class="p-3 rounded-xl bg-white/80 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800"><span class="text-[10px] font-bold text-slate-400 uppercase">Ethiopian Y/M/D</span><div id="durEthYMD" class="text-sm font-bold amharic-text">--</div></div>
+          <div class="p-3 rounded-xl bg-white/80 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800"><span class="text-[10px] font-bold text-slate-400 uppercase">Total Days</span><div id="durTotalDays" class="text-sm font-bold">--</div></div>
+          <div class="p-3 rounded-xl bg-white/80 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800"><span class="text-[10px] font-bold text-slate-400 uppercase">Weeks</span><div id="durWeeks" class="text-sm font-bold">--</div></div>
+          <div class="p-3 rounded-xl bg-white/80 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800"><span class="text-[10px] font-bold text-slate-400 uppercase">Weekdays (Mon–Fri)</span><div id="durBusinessDays" class="text-sm font-bold">--</div></div>
+        </div>
+        <div id="durNote" class="text-xs text-slate-500 dark:text-slate-400"></div>
+      </div>
+
+    </section>
+
+    <!-- TAB 7: EXCEL FORMULAS & VBA -->
+    <section id="contentExcel" class="hidden space-y-6">
+      
+      <div class="p-5 rounded-2xl glass-card border border-slate-200 dark:border-slate-800 shadow-sm space-y-2">
+        <h2 class="text-lg font-bold flex items-center gap-2">
+          <svg class="w-5 h-5 text-emerald-600" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+  <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+  <path d="M10 12.5 8 15l2 2.5" />
+  <path d="m14 12.5 2 2.5-2 2.5" />
+</svg>
+          Excel VBA & Formula Code Generator
+        </h2>
+        <p class="text-xs text-slate-600 dark:text-slate-400">
+          Copy these custom VBA functions directly into your Excel workbook (`ALT + F11 > Insert > Module`) to compute Ethiopian dates directly inside cell formulas like `=EthiopianToGregorian(A2)`.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        
+        <!-- Ethiopian to Gregorian VBA -->
+        <div class="space-y-2">
+          <div class="flex items-center justify-between">
+            <h3 class="text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300">
+              VBA Function: Ethiopian to Gregorian
+            </h3>
+            <button onclick="copyCode('vbaEthToGregCode')" class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-emerald-600 text-white hover:bg-emerald-700 transition flex items-center gap-1">
+              <svg class="w-3 h-3" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+  <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
+</svg> Copy VBA
+            </button>
+          </div>
+          <pre id="vbaEthToGregCode" class="p-4 rounded-2xl bg-slate-900 text-emerald-400 font-mono text-xs overflow-x-auto leading-relaxed border border-slate-800 shadow-inner">Function EthiopianToGregorian(eDay As Integer, eMonth As Integer, eYear As Integer) As Variant
+    ' Valid for Excel's date range (Gregorian 1901-2099)
+    Dim startOfEthYear As Date
+    Dim maxDay As Integer
+
+    If eMonth &lt; 1 Or eMonth &gt; 13 Or eDay &lt; 1 Then
+        EthiopianToGregorian = CVErr(xlErrValue): Exit Function
+    End If
+    If eMonth = 13 Then
+        If eYear Mod 4 = 3 Then maxDay = 6 Else maxDay = 5
+    Else
+        maxDay = 30
+    End If
+    If eDay &gt; maxDay Then
+        EthiopianToGregorian = CVErr(xlErrValue): Exit Function
+    End If
+
+    ' New Year is 12 Sep when the previous Ethiopian year was a leap year, else 11 Sep
+    If eYear Mod 4 = 0 Then
+        startOfEthYear = DateSerial(eYear + 7, 9, 12)
+    Else
+        startOfEthYear = DateSerial(eYear + 7, 9, 11)
+    End If
+
+    EthiopianToGregorian = startOfEthYear + (eMonth - 1) * 30 + (eDay - 1)
+End Function</pre>
+        </div>
+
+        <!-- Gregorian to Ethiopian VBA -->
+        <div class="space-y-2">
+          <div class="flex items-center justify-between">
+            <h3 class="text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300">
+              VBA Function: Gregorian to Ethiopian
+            </h3>
+            <button onclick="copyCode('vbaGregToEthCode')" class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-emerald-600 text-white hover:bg-emerald-700 transition flex items-center gap-1">
+              <svg class="w-3 h-3" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+  <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
+</svg> Copy VBA
+            </button>
+          </div>
+          <pre id="vbaGregToEthCode" class="p-4 rounded-2xl bg-slate-900 text-amber-400 font-mono text-xs overflow-x-auto leading-relaxed border border-slate-800 shadow-inner">Function GregorianToEthiopian(gDate As Date) As String
+    ' Valid for Excel's date range (Gregorian 1901-2099)
+    Dim gYear As Long, dayOfYear As Long
+    Dim eYear As Long, eMonth As Long, eDay As Long
+    Dim startOfEthYear As Date
+
+    gYear = Year(gDate)
+    eYear = gYear - 7
+    If eYear Mod 4 = 0 Then
+        startOfEthYear = DateSerial(gYear, 9, 12)
+    Else
+        startOfEthYear = DateSerial(gYear, 9, 11)
+    End If
+
+    If gDate &lt; startOfEthYear Then
+        eYear = gYear - 8
+        If eYear Mod 4 = 0 Then
+            startOfEthYear = DateSerial(gYear - 1, 9, 12)
+        Else
+            startOfEthYear = DateSerial(gYear - 1, 9, 11)
+        End If
+    End If
+    dayOfYear = CLng(gDate - startOfEthYear) + 1
+
+    If dayOfYear &lt;= 360 Then
+        eMonth = Int((dayOfYear - 1) / 30) + 1
+        eDay = ((dayOfYear - 1) Mod 30) + 1
+    Else
+        eMonth = 13
+        eDay = dayOfYear - 360
+    End If
+
+    GregorianToEthiopian = Format(eDay, "00") &amp; "/" &amp; Format(eMonth, "00") &amp; "/" &amp; eYear
+End Function</pre>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- TAB 8: CALENDAR REFERENCE & GE'EZ STUDIO -->
+    <section id="contentGuide" class="hidden space-y-6">
+      
+      <!-- Interactive Ge'ez Studio Converter -->
+      <div class="p-6 rounded-2xl glass-card border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
+        <h2 class="text-lg font-bold flex items-center gap-2">
+          <svg class="w-5 h-5 text-amber-500" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <rect x="14" y="14" width="4" height="6" rx="2" />
+  <rect x="6" y="4" width="4" height="6" rx="2" />
+  <path d="M6 20h4" />
+  <path d="M14 10h4" />
+  <path d="M6 14h2v6" />
+  <path d="M14 4h2v6" />
+</svg>
+          Interactive Ge'ez Numeral Converter Studio (የግዕዝ ቁጥሮች ማወራረጃ)
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+          <div class="space-y-2">
+            <label class="block text-xs font-semibold text-slate-600 dark:text-slate-400">Enter Number (Arabic Numerals e.g. 2017)</label>
+            <input type="number" id="geezStudioInput" value="2017" min="1" max="99999" oninput="updateGeezStudio()" class="w-full px-4 py-3 rounded-xl text-xl font-bold font-mono bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 outline-none focus:ring-2 focus:ring-amber-500">
+          </div>
+
+          <div class="p-5 rounded-2xl bg-amber-500/10 border border-amber-500/20 text-center space-y-1">
+            <span class="text-xs font-bold text-amber-700 dark:text-amber-400 uppercase">Ge'ez Numeral Output</span>
+            <div id="geezStudioOutput" class="text-4xl font-extrabold text-amber-600 dark:text-amber-400 font-mono tracking-widest amharic-text">
+              ፪፻፲፯
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reference Grids -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        
+        <!-- Ethiopian Months Card -->
+        <div class="p-4 rounded-2xl glass-card border border-slate-200 dark:border-slate-800 space-y-3">
+          <h3 class="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">
+            13 Ethiopian Months
+          </h3>
+          <ol class="text-xs divide-y divide-slate-100 dark:divide-slate-800 font-medium">
+            <li class="py-1.5 flex justify-between"><span>1. Meskerem (መስከረም)</span><span class="text-slate-400">30 days (Sep-Oct)</span></li>
+            <li class="py-1.5 flex justify-between"><span>2. Tikimt (ጥቅምት)</span><span class="text-slate-400">30 days (Oct-Nov)</span></li>
+            <li class="py-1.5 flex justify-between"><span>3. Hidar (ኅዳር)</span><span class="text-slate-400">30 days (Nov-Dec)</span></li>
+            <li class="py-1.5 flex justify-between"><span>4. Tahsas (ታኅሣሥ)</span><span class="text-slate-400">30 days (Dec-Jan)</span></li>
+            <li class="py-1.5 flex justify-between"><span>5. Ter (ጥር)</span><span class="text-slate-400">30 days (Jan-Feb)</span></li>
+            <li class="py-1.5 flex justify-between"><span>6. Yekatit (የካቲት)</span><span class="text-slate-400">30 days (Feb-Mar)</span></li>
+            <li class="py-1.5 flex justify-between"><span>7. Megabit (መጋቢት)</span><span class="text-slate-400">30 days (Mar-Apr)</span></li>
+            <li class="py-1.5 flex justify-between"><span>8. Miyazya (ሚያዝያ)</span><span class="text-slate-400">30 days (Apr-May)</span></li>
+            <li class="py-1.5 flex justify-between"><span>9. Ginbot (ግንቦት)</span><span class="text-slate-400">30 days (May-Jun)</span></li>
+            <li class="py-1.5 flex justify-between"><span>10. Sene (ሰኔ)</span><span class="text-slate-400">30 days (Jun-Jul)</span></li>
+            <li class="py-1.5 flex justify-between"><span>11. Hamle (ሐምሌ)</span><span class="text-slate-400">30 days (Jul-Aug)</span></li>
+            <li class="py-1.5 flex justify-between"><span>12. Nehase (ነሐሴ)</span><span class="text-slate-400">30 days (Aug-Sep)</span></li>
+            <li class="py-1.5 flex justify-between text-amber-600 font-bold"><span>13. Pagume (ጳጉሜ)</span><span>5 or 6 days</span></li>
+          </ol>
+        </div>
+
+        <!-- Ge'ez Numerals Card -->
+        <div class="p-4 rounded-2xl glass-card border border-slate-200 dark:border-slate-800 space-y-3">
+          <h3 class="text-xs font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400">
+            Ge'ez Numerals (የግዕዝ ቁጥሮች)
+          </h3>
+          <div class="grid grid-cols-2 gap-2 text-xs font-mono">
+            <div class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 flex justify-between"><span>1 = ፩</span><span>2 = ፪</span></div>
+            <div class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 flex justify-between"><span>3 = ፫</span><span>4 = ፬</span></div>
+            <div class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 flex justify-between"><span>5 = ፭</span><span>6 = ፮</span></div>
+            <div class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 flex justify-between"><span>7 = ፯</span><span>8 = ፰</span></div>
+            <div class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 flex justify-between"><span>9 = ፱</span><span>10 = ፲</span></div>
+            <div class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 flex justify-between"><span>20 = ፳</span><span>30 = ፴</span></div>
+            <div class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 flex justify-between"><span>40 = ፵</span><span>50 = ፶</span></div>
+            <div class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 flex justify-between"><span>100 = ፻</span><span>10000 = ፼</span></div>
+          </div>
+        </div>
+
+        <!-- Evangelist Years Card -->
+        <div class="p-4 rounded-2xl glass-card border border-slate-200 dark:border-slate-800 space-y-3">
+          <h3 class="text-xs font-bold uppercase tracking-wider text-red-600 dark:text-red-400">
+            4-Year Evangelist Cycle
+          </h3>
+          <div class="text-xs space-y-2 text-slate-600 dark:text-slate-400">
+            <p>Ethiopian years follow a 4-year cycle named after the four Evangelists:</p>
+            <ul class="space-y-1 font-medium text-slate-800 dark:text-slate-200">
+              <li>• <strong>John (ዮሐንስ)</strong> - Leap Year (Pagume has 6 days)</li>
+              <li>• <strong>Matthew (ማቴዎስ)</strong> - Standard Year</li>
+              <li>• <strong>Mark (ማርቆስ)</strong> - Standard Year</li>
+              <li>• <strong>Luke (ሉቃስ)</strong> - Standard Year</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Notification Toast Container -->
+  <div id="toastContainer" class="fixed bottom-5 right-5 z-50 flex flex-col space-y-2 pointer-events-none"></div>
+
+  <script>
+    /* CALSYNC CORE ENGINE & PWA LOGIC */
+
+    // 1. Amharic & Calendar Dictionaries
+    const ETH_MONTHS_EN = [
+      "Meskerem", "Tikimt", "Hidar", "Tahsas", "Ter", "Yekatit",
+      "Megabit", "Miyazya", "Ginbot", "Sene", "Hamle", "Nehase", "Pagume"
+    ];
+
+    const ETH_MONTHS_AM = [
+      "መስከረም", "ጥቅምት", "ኅዳር", "ታኅሣሥ", "ጥር", "የካቲት",
+      "መጋቢት", "ሚያዝያ", "ግንቦት", "ሰኔ", "ሐምሌ", "ነሐሴ", "ጳጉሜ"
+    ];
+
+    const ETH_WEEKDAYS_AM = [
+      "እሑድ", "ሰኞ", "ማክሰኞ", "ረቡዕ", "ሐሙስ", "ዓርብ", "ቅዳሜ"
+    ];
+
+    const HIJRI_MONTHS = [
+      "Muharram", "Safar", "Rabi' al-Awwal", "Rabi' al-Thani", "Jumada al-Awwal",
+      "Jumada al-Thani", "Rajab", "Sha'ban", "Ramadan", "Shawwal", "Dhu al-Qi'dah", "Dhu al-Hijjah"
+    ];
+
+    // Convert number to Ge'ez numeral
+    function toGeez(num) {
+      if (isNaN(num) || num <= 0) return num.toString();
+      const ones = ['', '፩', '፪', '፫', '፬', '፭', '፮', '፯', '፰', '፱'];
+      const tens = ['', '፲', '፳', '፴', '፵', '፶', '፷', '፸', '፹', '፺'];
+      
+      if (num < 10) return ones[num];
+      if (num < 100) {
+        const t = Math.floor(num / 10);
+        const o = num % 10;
+        return tens[t] + ones[o];
+      }
+      if (num < 10000) {
+        const h = Math.floor(num / 100);
+        const r = num % 100;
+        let res = (h === 1 ? '' : toGeez(h)) + '፻';
+        if (r > 0) res += toGeez(r);
+        return res;
+      }
+      return num.toString();
+    }
+
+    // 2. UNIFIED CALENDAR ENGINE (all conversions pivot through the Julian Day Number)
+    const CAL_MONTHS = { gregorian: 12, ethiopian: 13, hijri: 12 };
+    const ETH_EPOCH_JDN = 1724221;   // JDN of 1 Meskerem, Year 1 (Amete Mihret)
+    const HIJRI_EPOCH_JDN = 1948440; // JDN of 1 Muharram 1 AH (civil/tabular)
+
+    function isGregLeap(y) { return (y % 4 === 0 && y % 100 !== 0) || y % 400 === 0; }
+    function isEthLeap(y) { return y % 4 === 3; }
+    function isHijriLeap(y) { return (14 + 11 * y) % 30 < 11; }
+
+    function monthLength(cal, y, m) {
+      if (cal === 'gregorian') return [31, isGregLeap(y) ? 29 : 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31][m - 1];
+      if (cal === 'ethiopian') return m < 13 ? 30 : (isEthLeap(y) ? 6 : 5);
+      return (m % 2 === 1) ? 30 : ((m === 12 && isHijriLeap(y)) ? 30 : 29);
+    }
+
+    function isValidDate(cal, y, m, d) {
+      if (![y, m, d].every(Number.isInteger)) return false;
+      if (y < 1 || y > 9999) return false;
+      if (m < 1 || m > CAL_MONTHS[cal]) return false;
+      return d >= 1 && d <= monthLength(cal, y, m);
+    }
+
+    function gregorianToJdn(year, month, day) {
+      const a = Math.floor((14 - month) / 12);
+      const y = year + 4800 - a;
+      const m = month + 12 * a - 3;
+      return day + Math.floor((153 * m + 2) / 5) + 365 * y + Math.floor(y / 4) - Math.floor(y / 100) + Math.floor(y / 400) - 32045;
+    }
+
+    function jdnToGregorian(jdn) {
+      const a = jdn + 32044;
+      const b = Math.floor((4 * a + 3) / 146097);
+      const c = a - Math.floor(146097 * b / 4);
+      const d = Math.floor((4 * c + 3) / 1461);
+      const e = c - Math.floor(1461 * d / 4);
+      const m = Math.floor((5 * e + 2) / 153);
+      return {
+        year: 100 * b + d - 4800 + Math.floor(m / 10),
+        month: m + 3 - 12 * Math.floor(m / 10),
+        day: e - Math.floor((153 * m + 2) / 5) + 1
+      };
+    }
+
+    function julianToJdn(year, month, day) {
+      const a = Math.floor((14 - month) / 12);
+      const y = year + 4800 - a;
+      const m = month + 12 * a - 3;
+      return day + Math.floor((153 * m + 2) / 5) + 365 * y + Math.floor(y / 4) - 32083;
+    }
+
+    function ethToJdn(y, m, d) {
+      return ETH_EPOCH_JDN + 365 * (y - 1) + Math.floor(y / 4) + 30 * (m - 1) + d - 1;
+    }
+
+    function jdnToEth(jdn) {
+      let y = Math.floor((jdn - ETH_EPOCH_JDN) / 365.25) + 1;
+      while (ethToJdn(y + 1, 1, 1) <= jdn) y++;
+      while (ethToJdn(y, 1, 1) > jdn) y--;
+      const doy = jdn - ethToJdn(y, 1, 1);
+      return { year: y, month: Math.floor(doy / 30) + 1, day: (doy % 30) + 1 };
+    }
+
+    function hijriToJdn(y, m, d) {
+      return d + Math.ceil(29.5 * (m - 1)) + (y - 1) * 354 + Math.floor((3 + 11 * y) / 30) + HIJRI_EPOCH_JDN - 1;
+    }
+
+    function jdnToHijri(jdn) {
+      let y = Math.floor((30 * (jdn - HIJRI_EPOCH_JDN) + 10646) / 10631);
+      while (hijriToJdn(y + 1, 1, 1) <= jdn) y++;
+      while (hijriToJdn(y, 1, 1) > jdn) y--;
+      let m = Math.min(12, Math.ceil((jdn - 29 - hijriToJdn(y, 1, 1)) / 29.5) + 1);
+      if (m < 1) m = 1;
+      while (m < 12 && hijriToJdn(y, m + 1, 1) <= jdn) m++;
+      while (m > 1 && hijriToJdn(y, m, 1) > jdn) m--;
+      return { year: y, month: m, day: jdn - hijriToJdn(y, m, 1) + 1 };
+    }
+
+    function toJdn(cal, o) {
+      if (cal === 'gregorian') return gregorianToJdn(o.year, o.month, o.day);
+      if (cal === 'ethiopian') return ethToJdn(o.year, o.month, o.day);
+      return hijriToJdn(o.year, o.month, o.day);
+    }
+    function fromJdn(cal, jdn) {
+      if (cal === 'gregorian') return jdnToGregorian(jdn);
+      if (cal === 'ethiopian') return jdnToEth(jdn);
+      return jdnToHijri(jdn);
+    }
+
+    // Backward-compatible wrappers
+    function ethToGreg(eYear, eMonth, eDay) { return jdnToGregorian(ethToJdn(eYear, eMonth, eDay)); }
+    function gregToEth(gYear, gMonth, gDay) { return jdnToEth(gregorianToJdn(gYear, gMonth, gDay)); }
+    function gregorianToHijri(gYear, gMonth, gDay) { return jdnToHijri(gregorianToJdn(gYear, gMonth, gDay)); }
+
+    // Add whole months (calendar-aware); the day is clamped to the target month's length
+    // (e.g. 31 Jan + 1 month = 28/29 Feb, 29 Feb + 1 year = 28 Feb).
+    function addMonthsCal(cal, o, n) {
+      const M = CAL_MONTHS[cal];
+      const t = o.year * M + (o.month - 1) + n;
+      const y = Math.floor(t / M);
+      const m = t - y * M + 1;
+      return { year: y, month: m, day: Math.min(o.day, monthLength(cal, y, m)) };
+    }
+
+    // Exact calendar difference (years, months, days) between a <= b
+    function diffYMD(cal, a, b) {
+      const M = CAL_MONTHS[cal];
+      const bJ = toJdn(cal, b);
+      let tm = (b.year - a.year) * M + (b.month - a.month);
+      let anchor = addMonthsCal(cal, a, tm);
+      if (toJdn(cal, anchor) > bJ) { tm--; anchor = addMonthsCal(cal, a, tm); }
+      return { years: Math.floor(tm / M), months: tm % M, days: bJ - toJdn(cal, anchor), totalMonths: tm };
+    }
+
+    function weekdayIndex(jdn) { return (jdn + 1) % 7; } // 0 = Sunday
+
+    function toLocalISO(d) {
+      const p = (n) => String(n).padStart(2, '0');
+      return `${String(d.getFullYear()).padStart(4, '0')}-${p(d.getMonth() + 1)}-${p(d.getDate())}`;
+    }
+    function localDateFromISO(s) {
+      const p = (s || '').split('-').map(Number);
+      if (p.length !== 3 || p.some(isNaN)) return null;
+      const d = new Date(2000, 0, 1);
+      d.setFullYear(p[0], p[1] - 1, p[2]);
+      d.setHours(0, 0, 0, 0);
+      return d;
+    }
+    function parseISOParts(s) {
+      const m = /^(\d{1,6})-(\d{1,2})-(\d{1,2})$/.exec((s || '').trim());
+      return m ? { year: +m[1], month: +m[2], day: +m[3] } : null;
+    }
+    function todayGreg() {
+      const n = new Date();
+      return { year: n.getFullYear(), month: n.getMonth() + 1, day: n.getDate() };
+    }
+
+    const GREG_MONTH_FULL = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    const WEEKDAYS_EN = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+    // 4. Robust Date Parsing (validated against the SOURCE calendar's real month lengths)
+    function parseDateString(rawStr, hintFormat, forceSwapDayMonth, srcCal) {
+      if (!rawStr) return null;
+      const cleaned = rawStr.trim();
+      if (!cleaned) return null;
+      const cal = srcCal || 'gregorian';
+
+      const parts = cleaned.split(/[\/\-\.\s]+/).filter(Boolean);
+      if (parts.length < 3) return null;
+      if (!parts.slice(0, 3).every(p => /^\d+$/.test(p))) return null;
+
+      const p1 = parseInt(parts[0], 10), p2 = parseInt(parts[1], 10), p3 = parseInt(parts[2], 10);
+      let d = null, m = null, y = null;
+
+      if (parts[0].length >= 3 || p1 > 1000) { // YYYY-MM-DD
+        y = p1; m = p2; d = p3;
+      } else {
+        y = (parts[2].length <= 2) ? 2000 + p3 : p3;
+        if (hintFormat === 'MDY') { m = p1; d = p2; }
+        else if (hintFormat === 'DMY') { d = p1; m = p2; }
+        else if (hintFormat === 'YMD') { return null; }
+        else if (cal !== 'gregorian') { d = p1; m = p2; }   // Ethiopian/Hijri: day-first (month 13 is valid)
+        else if (p1 > 12) { d = p1; m = p2; }
+        else if (p2 > 12) { m = p1; d = p2; }
+        else { d = p1; m = p2; }
+      }
+
+      if (forceSwapDayMonth) { const t = d; d = m; m = t; }
+
+      return isValidDate(cal, y, m, d) ? { day: d, month: m, year: y } : null;
+    }
+
+    function formatDateObject(dObj, calType, fmtType) {
+      if (!dObj) return "--";
+
+      const pad = (n) => n < 10 ? '0' + n : n;
+
+      if (fmtType === 'DMY') return `${pad(dObj.day)}/${pad(dObj.month)}/${dObj.year}`;
+      if (fmtType === 'MDY') return `${pad(dObj.month)}/${pad(dObj.day)}/${dObj.year}`;
+      if (fmtType === 'YMD') return `${dObj.year}-${pad(dObj.month)}-${pad(dObj.day)}`;
+
+      if (calType === 'ethiopian') {
+        const mEn = ETH_MONTHS_EN[dObj.month - 1] || "Month" + dObj.month;
+        const mAm = ETH_MONTHS_AM[dObj.month - 1] || "";
+        
+        if (fmtType === 'TEXT_EN') return `${dObj.day} ${mEn} ${dObj.year}`;
+        if (fmtType === 'TEXT_AM') return `${dObj.day} ${mAm} ${dObj.year} ዓ.ም`;
+        if (fmtType === 'GEEZ') return `${toGeez(dObj.day)} ${mAm} ${toGeez(dObj.year)}`;
+      } else if (calType === 'gregorian') {
+        const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        const mName = monthNames[dObj.month - 1] || "";
+        if (fmtType === 'TEXT_EN' || fmtType === 'TEXT_AM') return `${pad(dObj.day)} ${mName} ${dObj.year}`;
+      } else if (calType === 'hijri') {
+        const hName = HIJRI_MONTHS[dObj.month - 1] || "";
+        return `${dObj.day} ${hName} ${dObj.year} AH`;
+      }
+
+      return `${pad(dObj.day)}/${pad(dObj.month)}/${dObj.year}`;
+    }
+
+    let currentBatchResults = [];
+
+    function processBatch() {
+      const inputText = document.getElementById('batchInputText').value;
+      const srcCal = document.getElementById('batchSourceCal').value;
+      const tgtCal = document.getElementById('batchTargetCal').value;
+      const inFmt = document.getElementById('batchInputFormat').value;
+      const outFmt = document.getElementById('batchOutputFormat').value;
+      const forceSwap = document.getElementById('swapMonthDayToggle').checked;
+
+      const lines = inputText.split('\n');
+      const tableBody = document.getElementById('batchTableBody');
+      tableBody.innerHTML = '';
+
+      currentBatchResults = [];
+      let successCount = 0;
+      let errorCount = 0;
+
+      lines.forEach((line, index) => {
+        if (!line.trim()) return;
+
+        const rowNum = index + 1;
+        const parsed = parseDateString(line, inFmt, forceSwap, srcCal);
+
+        let targetDateObj = null;
+        let status = 'valid';
+
+        if (!parsed) {
+          status = 'error';
+          errorCount++;
+        } else {
+          const srcOk = isValidDate(srcCal, parsed.year, parsed.month, parsed.day);
+          if (srcOk) {
+            targetDateObj = (srcCal === tgtCal) ? parsed : fromJdn(tgtCal, toJdn(srcCal, parsed));
+          }
+
+          if (targetDateObj) {
+            successCount++;
+          } else {
+            status = 'error';
+            errorCount++;
+          }
+        }
+
+        const formattedTarget = targetDateObj ? formatDateObject(targetDateObj, tgtCal, outFmt) : '--';
+        const formattedSource = parsed ? `${parsed.day}/${parsed.month}/${parsed.year}` : '--';
+
+        currentBatchResults.push({
+          row: rowNum,
+          original: line.trim(),
+          source: formattedSource,
+          target: formattedTarget,
+          status: status
+        });
+
+        const tr = document.createElement('tr');
+        tr.className = status === 'error' ? 'bg-red-50/50 dark:bg-red-950/20' : 'hover:bg-slate-50 dark:hover:bg-slate-800/50 transition';
+
+        tr.innerHTML = `
+          <td class="py-2.5 px-3 text-center text-slate-400">${rowNum}</td>
+          <td class="py-2.5 px-3 font-semibold text-slate-700 dark:text-slate-300">${escapeHtml(line.trim())}</td>
+          <td class="py-2.5 px-3 text-slate-500">${formattedSource}</td>
+          <td class="py-2.5 px-3 font-bold text-emerald-600 dark:text-emerald-400">${formattedTarget}</td>
+          <td class="py-2.5 px-3 text-center">
+            ${status === 'error' 
+              ? `<span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-red-100 text-red-700 dark:bg-red-950 dark:text-red-300">Invalid</span>`
+              : `<span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300">OK</span>`
+            }
+          </td>
+        `;
+        tableBody.appendChild(tr);
+      });
+
+      document.getElementById('statTotalRows').innerText = `${currentBatchResults.length} Rows`;
+      document.getElementById('statSuccess').innerText = `${successCount} Converted`;
+      document.getElementById('statErrors').innerText = `${errorCount} Issues`;
+    }
+
+    function escapeHtml(text) {
+      return text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    }
+
+    function loadSampleData(type) {
+      if (type === 'ethiopian') {
+        document.getElementById('batchSourceCal').value = 'ethiopian';
+        document.getElementById('batchTargetCal').value = 'gregorian';
+        document.getElementById('batchInputText').value = "28/10/2011\n29/10/2011\n01/11/2011\n03/09/2010\n05/13/2015";
+      } else if (type === 'flipped') {
+        document.getElementById('batchSourceCal').value = 'gregorian';
+        document.getElementById('batchTargetCal').value = 'ethiopian';
+        document.getElementById('swapMonthDayToggle').checked = true;
+        document.getElementById('batchInputText').value = "28/10/2018\n29/10/2018\n5/11/2018\n6/11/2018\n7/11/2018";
+      }
+      processBatch();
+      showToast("Sample data loaded successfully!", "success");
+    }
+
+    function clearBatchInput() {
+      document.getElementById('batchInputText').value = '';
+      processBatch();
+    }
+
+    function handleFileUpload(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        document.getElementById('batchInputText').value = e.target.result;
+        processBatch();
+        showToast(`Uploaded ${file.name} successfully!`, "success");
+      };
+      reader.readAsText(file);
+    }
+
+    function copyConvertedColumnOnly() {
+      if (currentBatchResults.length === 0) {
+        showToast("No data available to copy!", "error");
+        return;
+      }
+      const colText = currentBatchResults.map(r => r.target).join('\n');
+      copyToClipboard(colText);
+      showToast("Converted column copied! Ready to paste into Excel.", "success");
+    }
+
+    function exportBatchCSV() {
+      if (currentBatchResults.length === 0) {
+        showToast("No data to export!", "error");
+        return;
+      }
+      let csv = "Row,Original_Input,Parsed_Source,Converted_Target,Status\n";
+      currentBatchResults.forEach(r => {
+        const q = (v) => `"${String(v).replace(/"/g, '""')}"`;
+        csv += [r.row, r.original, r.source, r.target, r.status].map(q).join(',') + "\n";
+      });
+      const blob = new Blob(['\uFEFF' + csv], { type: 'text/csv;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `CalSync_Converted_Dates.csv`;
+      a.click();
+      URL.revokeObjectURL(url);
+      showToast("CSV file exported successfully!", "success");
+    }
+
+    // 5. AGE & DAY CALCULATOR LOGIC
+    function toggleAgeCalInput() {
+      const sys = document.getElementById('ageCalSystem').value;
+      if (sys === 'gregorian') {
+        document.getElementById('ageGregContainer').classList.remove('hidden');
+        document.getElementById('ageEthContainer').classList.add('hidden');
+      } else {
+        document.getElementById('ageGregContainer').classList.add('hidden');
+        document.getElementById('ageEthContainer').classList.remove('hidden');
+      }
+      calculateAge();
+    }
+
+    function setSampleBirth(dateStr) {
+      document.getElementById('ageBirthPicker').value = dateStr;
+      calculateAge();
+    }
+
+    function showAgeError(msg) {
+      document.getElementById('ageMainString').innerText = msg;
+      document.getElementById('ageMainAmharic').innerText = '--';
+      const el = document.getElementById('ageEthCalLine'); if (el) el.innerText = '';
+      ['ageTotalDays', 'ageTotalWeeks', 'ageTotalHours', 'ageTotalMinutes'].forEach(id => document.getElementById(id).innerText = '0');
+      document.getElementById('ageBornDayBadge').innerText = '--';
+      document.getElementById('ageDaysToBirthday').innerText = '0';
+      ['ageEthBirthDisplay', 'ageGregBirthDisplay', 'ageHijriBirthDisplay'].forEach(id => document.getElementById(id).innerText = '--');
+    }
+
+    function calculateAge() {
+      const sys = document.getElementById('ageCalSystem').value;
+      let birth = null;
+
+      if (sys === 'gregorian') {
+        const val = document.getElementById('ageBirthPicker').value;
+        if (!val) { showAgeError('Select a birth date'); return; }
+        const p = parseISOParts(val);
+        if (!p || !isValidDate('gregorian', p.year, p.month, p.day)) { showAgeError('Invalid date'); return; }
+        birth = p;
+      } else {
+        const d = parseInt(document.getElementById('ageEthDay').value, 10);
+        const m = parseInt(document.getElementById('ageEthMonth').value, 10);
+        const y = parseInt(document.getElementById('ageEthYear').value, 10);
+        if (!d || !m || !y) { showAgeError('Enter the Ethiopian birth date'); return; }
+        if (!isValidDate('ethiopian', y, m, d)) {
+          showAgeError(m === 13 ? `Invalid: Pagume has ${isEthLeap(y) ? 6 : 5} days in ${y}` : 'Invalid Ethiopian date');
+          return;
+        }
+        birth = jdnToGregorian(ethToJdn(y, m, d));
+      }
+
+      const today = todayGreg();
+      const bJdn = gregorianToJdn(birth.year, birth.month, birth.day);
+      const tJdn = gregorianToJdn(today.year, today.month, today.day);
+
+      if (bJdn > tJdn) { showAgeError('Future birth date!'); return; }
+
+      // Exact calendar age (month-end safe, leap-day safe)
+      const age = diffYMD('gregorian', birth, today);
+      document.getElementById('ageMainString').innerText = `${age.years} Years, ${age.months} Months, ${age.days} Days`;
+      document.getElementById('ageMainAmharic').innerText = `${age.years} ዓመት፤ ${age.months} ወር፤ ${age.days} ቀን`;
+
+      // Same age counted in the Ethiopian calendar (13 months)
+      const bEth = jdnToEth(bJdn);
+      const ageEth = diffYMD('ethiopian', bEth, jdnToEth(tJdn));
+      const ethLine = document.getElementById('ageEthCalLine');
+      if (ethLine) ethLine.innerText = `Ethiopian-calendar age: ${ageEth.years} ዓመት፤ ${ageEth.months} ወር፤ ${ageEth.days} ቀን`;
+
+      // Total life breakdown (days from calendar; hours/minutes = real elapsed time since birth midnight)
+      const totalDays = tJdn - bJdn;
+      const born = new Date(2000, 0, 1);
+      born.setFullYear(birth.year, birth.month - 1, birth.day);
+      born.setHours(0, 0, 0, 0);
+      const elapsedMs = Math.max(0, Date.now() - born.getTime());
+
+      document.getElementById('ageTotalDays').innerText = totalDays.toLocaleString();
+      document.getElementById('ageTotalWeeks').innerText = Math.floor(totalDays / 7).toLocaleString();
+      document.getElementById('ageTotalHours').innerText = Math.floor(elapsedMs / 3600000).toLocaleString();
+      document.getElementById('ageTotalMinutes').innerText = Math.floor(elapsedMs / 60000).toLocaleString();
+
+      // Weekday born
+      const dayIdx = weekdayIndex(bJdn);
+      document.getElementById('ageBornDayBadge').innerText = `Born on ${ETH_WEEKDAYS_AM[dayIdx]} (${WEEKDAYS_EN[dayIdx]})`;
+
+      // Cross-calendar birth dates
+      const bHijri = jdnToHijri(bJdn);
+      document.getElementById('ageEthBirthDisplay').innerText = `${bEth.day} ${ETH_MONTHS_AM[bEth.month - 1]} ${bEth.year} ዓ.ም`;
+      document.getElementById('ageGregBirthDisplay').innerText = `${birth.day}/${birth.month}/${birth.year}`;
+      document.getElementById('ageHijriBirthDisplay').innerText = `${bHijri.day}/${bHijri.month}/${bHijri.year} AH`;
+
+      // Next birthday (29 Feb birthdays are observed on 28 Feb in common years)
+      let k = today.year - birth.year;
+      let nextB = addMonthsCal('gregorian', birth, 12 * k);
+      if (toJdn('gregorian', nextB) < tJdn) nextB = addMonthsCal('gregorian', birth, 12 * (k + 1));
+      const daysToBday = toJdn('gregorian', nextB) - tJdn;
+      document.getElementById('ageDaysToBirthday').innerText = daysToBday === 0 ? '0 🎂' : daysToBday;
+    }
+
+    // 6. ETHIOPIAN CLOCK LOGIC
+    function updateLiveEthClock() {
+      const now = new Date();
+      
+      // Western Time Display
+      const wHours = now.getHours();
+      const wMins = now.getMinutes();
+      const wSecs = now.getSeconds();
+
+      const wHoursPad = wHours < 10 ? '0' + wHours : wHours;
+      const wMinsPad = wMins < 10 ? '0' + wMins : wMins;
+      const wSecsPad = wSecs < 10 ? '0' + wSecs : wSecs;
+      
+      document.getElementById('liveWesternClock').innerText = `${wHoursPad}:${wMinsPad}:${wSecsPad}`;
+      document.getElementById('liveWesternDate').innerText = now.toDateString();
+
+      // Ethiopian Time Conversion
+      // 6:00 AM Western = 12:00 AM Ethiopian Daybreak
+      let ethHour = (wHours + 6) % 12;
+      if (ethHour === 0) ethHour = 12;
+
+      let ethPeriod = "ከቀኑ"; // Default daytime
+      let ethPeriodEn = "Daytime";
+
+      if (wHours >= 6 && wHours < 12) {
+        ethPeriod = "ከጠዋቱ";
+        ethPeriodEn = "Morning";
+      } else if (wHours >= 12 && wHours < 18) {
+        ethPeriod = "ከቀኑ";
+        ethPeriodEn = "Daytime";
+      } else if (wHours >= 18 && wHours < 24) {
+        ethPeriod = "ከምሽቱ";
+        ethPeriodEn = "Evening";
+      } else {
+        ethPeriod = "ከሌሊቱ";
+        ethPeriodEn = "Nighttime";
+      }
+
+      const ethClockText = `${ethHour}:${wMinsPad}:${wSecsPad}`;
+      document.getElementById('liveEthiopianClock').innerText = ethClockText;
+      document.getElementById('liveEthiopianClockAmharic').innerText = `${ethPeriod} ${ethHour}:${wMinsPad} ሰዓት (${ethPeriodEn})`;
+      document.getElementById('headerLiveEthClock').innerText = `${ethPeriod} ${ethHour}:${wMinsPad} ሰዓት`;
+    }
+
+    function convertEthTime() {
+      const inputVal = document.getElementById('timeConvertInput').value;
+      if (!inputVal) return;
+
+      const p = inputVal.split(':');
+      const wH = parseInt(p[0], 10);
+      const wM = parseInt(p[1], 10);
+      if (isNaN(wH) || isNaN(wM)) return;
+
+      let eH = (wH + 6) % 12;
+      if (eH === 0) eH = 12;
+
+      let periodAm = "ከቀኑ";
+      let periodEn = "Daytime";
+
+      if (wH >= 6 && wH < 12) {
+        periodAm = "ከጠዋቱ"; periodEn = "Morning";
+      } else if (wH >= 12 && wH < 18) {
+        periodAm = "ከቀኑ"; periodEn = "Daytime";
+      } else if (wH >= 18 && wH < 24) {
+        periodAm = "ከምሽቱ"; periodEn = "Evening";
+      } else {
+        periodAm = "ከሌሊቱ"; periodEn = "Nighttime";
+      }
+
+      const minPad = wM < 10 ? '0' + wM : wM;
+      document.getElementById('timeConvertEthResult').innerText = `${periodAm} ${eH}:${minPad} ሰዓት`;
+      document.getElementById('timeConvertEthDesc').innerText = `${eH}:${minPad} ${periodEn} (Ethiopian Local System)`;
+    }
+
+    // 7. ETHIOPIAN HOLIDAYS COMPUTUS
+    function getJulianEaster(year) {
+      const a = year % 19;
+      const b = year % 4;
+      const c = year % 7;
+      const d = (19 * a + 15) % 30;
+      const e = (2 * b + 4 * c + 6 * d + 6) % 7;
+      const f = d + e;
+      
+      let day = 22 + f;
+      let month = 3;
+      if (day > 31) {
+        day = f - 9;
+        month = 4;
+      }
+      return { year: year, month: month, day: day }; // Julian date
+    }
+
+    // ===== Editable holidays (stored in this browser) =====
+    const H_KEY = 'calsync_holidays_v1';
+    const esc = (v) => String(v == null ? '' : v).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+    function hLoad() {
+      try { const o = JSON.parse(localStorage.getItem(H_KEY) || '{}'); return { custom: o.custom || [], over: o.over || {}, hidden: o.hidden || [] }; }
+      catch (e) { return { custom: [], over: {}, hidden: [] }; }
+    }
+    function hStore(st) { try { localStorage.setItem(H_KEY, JSON.stringify(st)); } catch (e) { showToast('Could not save: browser storage is blocked', 'error'); } }
+    function hResolve(dt, eYear) {
+      const lo = ethToJdn(eYear, 1, 1), hi = ethToJdn(eYear + 1, 1, 1) - 1;
+      if (dt.mode === 'eth') return ethToJdn(eYear, dt.m, Math.min(dt.d, monthLength('ethiopian', eYear, dt.m)));
+      if (dt.mode === 'greg') {
+        for (const y of [eYear + 7, eYear + 8]) { const j = gregorianToJdn(y, dt.m, Math.min(dt.d, monthLength('gregorian', y, dt.m))); if (j >= lo && j <= hi) return j; }
+        return null;
+      }
+      if (dt.mode === 'once') { const j = gregorianToJdn(dt.y, dt.m, dt.d); return (j >= lo && j <= hi) ? j : null; }
+      return null;
+    }
+    let hEditing = null;
+    function hModeChange() {
+      const mode = document.getElementById('hfMode').value, sel = document.getElementById('hfM');
+      const names = mode === 'eth' ? ETH_MONTHS_EN : GREG_MONTH_FULL, prev = sel.value;
+      sel.innerHTML = names.map((n, i) => `<option value="${i + 1}">${i + 1}. ${n}</option>`).join('');
+      if (prev && +prev <= names.length) sel.value = prev;
+      document.getElementById('hfDateWrap').classList.toggle('hidden', mode === 'calc');
+      document.getElementById('hfYWrap').classList.toggle('hidden', mode !== 'once');
+    }
+    function hOpenForm(idx) {
+      const row = idx === null ? null : holidayRows[idx];
+      hEditing = row ? { src: row.src, key: row.key } : null;
+      const st = hLoad(), o = row && row.src === 'builtin' ? st.over[row.key] : null;
+      const cust = row && row.src === 'custom' ? st.custom.find(c => c.id === row.id) : null;
+      document.getElementById('hFormTitle').innerText = row ? 'Edit entry' : 'Add entry';
+      document.getElementById('hfEn').value = row ? row.en : '';
+      document.getElementById('hfAm').value = row ? row.am : '';
+      document.getElementById('hfType').value = row ? row.type : 'Personal';
+      document.getElementById('hfLen').value = row ? (row.len || 1) : 1;
+      const dt = cust ? cust.date : (o && o.date ? o.date : null);
+      document.getElementById('hfMode').value = dt ? dt.mode : (row ? 'calc' : 'eth');
+      hModeChange();
+      if (dt) { document.getElementById('hfM').value = dt.m; document.getElementById('hfD').value = dt.d; document.getElementById('hfY').value = dt.y || ''; }
+      else if (!row) { document.getElementById('hfD').value = ''; document.getElementById('hfY').value = ''; }
+      // builtin-only: allow "keep calculated"; custom must have a rule
+      document.getElementById('hfMode').options[0].disabled = !(row && row.src === 'builtin');
+      document.getElementById('hfErr').innerText = '';
+      document.getElementById('hForm').classList.remove('hidden');
+      document.getElementById('hForm').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+    function hCloseForm() { document.getElementById('hForm').classList.add('hidden'); hEditing = null; }
+    function hSaveForm() {
+      const err = (m) => document.getElementById('hfErr').innerText = m;
+      const en = document.getElementById('hfEn').value.trim(), am = document.getElementById('hfAm').value.trim();
+      const type = document.getElementById('hfType').value, mode = document.getElementById('hfMode').value;
+      const len = Math.max(1, Math.min(366, parseInt(document.getElementById('hfLen').value, 10) || 1));
+      if (!en) return err('Please enter an English name.');
+      let date = null;
+      if (mode !== 'calc') {
+        const d = parseInt(document.getElementById('hfD').value, 10), m = parseInt(document.getElementById('hfM').value, 10), y = parseInt(document.getElementById('hfY').value, 10);
+        if (!d || !m) return err('Please enter a valid day and month.');
+        if (mode === 'eth') { if (d > (m === 13 ? 6 : 30)) return err(m === 13 ? 'Pagume has only 5 or 6 days.' : 'Ethiopian months have 30 days.'); date = { mode, m, d }; }
+        else if (mode === 'greg') { if (d > monthLength('gregorian', 2000, m)) return err('Invalid Gregorian day for that month.'); date = { mode, m, d }; }
+        else { if (!isValidDate('gregorian', y, m, d)) return err('Invalid date.'); date = { mode, m, d, y }; }
+      }
+      const st = hLoad();
+      if (hEditing && hEditing.src === 'builtin') {
+        st.over[hEditing.key] = { en, am, type, len, ...(date ? { date } : {}) };
+      } else if (hEditing && hEditing.src === 'custom') {
+        const c = st.custom.find(x => x.id === hEditing.key); if (c) Object.assign(c, { en, am, type, len, date });
+      } else {
+        st.custom.push({ id: 'c' + Date.now().toString(36), en, am, type, len, date });
+      }
+      hStore(st); hCloseForm(); renderHolidays(); showToast('Entry saved', 'success');
+    }
+    function hDelete(idx) {
+      const row = holidayRows[idx]; if (!row || !confirm(`Delete "${row.en}"?`)) return;
+      const st = hLoad();
+      if (row.src === 'builtin') { if (!st.hidden.includes(row.key)) st.hidden.push(row.key); delete st.over[row.key]; }
+      else st.custom = st.custom.filter(c => c.id !== row.id);
+      hStore(st); renderHolidays(); showToast('Entry deleted', 'success');
+    }
+    function hReset() {
+      if (!confirm('Remove all your edits, additions and deletions and restore the default list?')) return;
+      try { localStorage.removeItem(H_KEY); } catch (e) {}
+      renderHolidays(); showToast('Defaults restored', 'success');
+    }
+
+    let holidayRows = [];
+    function renderHolidays() {
+      const eYear = parseInt(document.getElementById('holidayYearInput').value, 10);
+      const stEl = document.getElementById('hStatus');
+      if (!eYear || eYear < 1 || eYear > 9990) { stEl.className = 'text-xs font-semibold text-red-600 px-1'; stEl.innerText = 'Enter a valid Ethiopian year between 1 and 9990.'; return false; }
+      const gY = eYear + 8;
+      let L = [];
+      const eth = (en, am, m, d, type, len) => L.push({ key: en, src: 'builtin', en, am, jdn: ethToJdn(eYear, m, d), type, len });
+      const jd = (en, am, j, type, len) => L.push({ key: en, src: 'builtin', en, am, jdn: j, type, len });
+      const je = getJulianEaster(gY), ea = julianToJdn(je.year, je.month, je.day);
+      const genna = gregorianToJdn(gY, 1, 7), timkat = gregorianToJdn(gY, 1, 19);
+
+      if (!document.getElementById('hfM').options.length) hModeChange();
+      eth("Ethiopian New Year (Enkutatash)", "እንቁጣጣሽ (አዲስ ዓመት)", 1, 1, "National Holiday");
+      eth("Finding of the True Cross (Meskel)", "መስቀል", 1, 17, "Religious Holiday");
+      jd("Ethiopian Christmas (Genna)", "ገና (ልደት)", genna, "Religious Holiday");
+      jd("Ethiopian Epiphany (Timkat)", "ጥምቀት", timkat, "Religious Holiday");
+      eth("Adwa Victory Day", "የዓድዋ ድል በዓል", 6, 23, "National Holiday");
+      jd("Good Friday (Siklet)", "ስቅለት", ea - 2, "Religious Holiday");
+      jd("Ethiopian Easter (Fasika)", "ፋሲካ (ትንሣኤ)", ea, "Religious Holiday");
+      eth("International Labor Day", "የሠራተኞች ቀን", 8, 23, "National Holiday");
+      eth("Patriots' Victory Day", "የአርበኞች ቀን", 8, 27, "National Holiday");
+      eth("Downfall of the Derg (National Day)", "ደርግ የወደቀበት ቀን (ብሔራዊ ቀን)", 9, 20, "National Holiday");
+      // Tewahedo fasts (start dates; length in days where fixed)
+      jd("Great Lent begins (Abiy Tsom)", "አብይ ጾም (ዓቢይ ጾም) መጀመሪያ", ea - 55, "Fast", 55);
+      jd("Hosanna (Palm Sunday)", "ሆሳዕና", ea - 7, "Religious Observance");
+      jd("Apostles' Fast begins (Tsome Hawaryat)", "ጾመ ሐዋርያት መጀመሪያ", ea + 50, "Fast");
+      eth("Apostles' Fast ends (Sts. Peter & Paul)", "ጾመ ሐዋርያት መፈታት", 11, 5, "Fast");
+      eth("Fast of the Assumption begins (Filseta)", "ጾመ ፍልሰታ መጀመሪያ", 12, 1, "Fast", 15);
+      eth("Fast of the Prophets begins (Tsome Nebiyat)", "ጾመ ነቢያት መጀመሪያ", 3, 15, "Fast");
+      jd("Fast of Gahad (Genna eve)", "ጋድ የገና", genna - 1, "Fast", 1);
+      jd("Fast of Gahad (Timkat eve)", "ጋድ የጥምቀት", timkat - 1, "Fast", 1);
+      // apply user edits: hidden built-ins, overrides, custom entries
+      const st = hLoad();
+      L = L.filter(h => !st.hidden.includes(h.key));
+      L.forEach(h => {
+        const o = st.over[h.key]; if (!o) return;
+        if (o.en) h.en = o.en; if (o.am !== undefined) h.am = o.am; if (o.type) h.type = o.type; if (o.len) h.len = o.len;
+        if (o.date) { const j = hResolve(o.date, eYear); if (j !== null) h.jdn = j; }
+      });
+      st.custom.forEach(c => {
+        const j = hResolve(c.date, eYear);
+        if (j !== null) L.push({ key: c.id, id: c.id, src: 'custom', en: c.en, am: c.am || '', type: c.type, len: c.len, jdn: j });
+      });
+      L.sort((a, b) => a.jdn - b.jdn);
+      holidayRows = L;
+
+      const t = todayGreg(), tj = gregorianToJdn(t.year, t.month, t.day);
+      const next = L.find(h => h.jdn >= tj); if (next) next.g = jdnToGregorian(next.jdn);
+      const tbody = document.getElementById('holidaysTableBody');
+      tbody.innerHTML = '';
+      const matches = L.filter(hMatch).length;
+      L.forEach((h, idx) => {
+        if (!hMatch(h)) return;
+        const e = jdnToEth(h.jdn), g = jdnToGregorian(h.jdn);
+        h.e = e; h.g = g;
+        const isFast = h.type === 'Fast';
+        const tr = document.createElement('tr');
+        tr.className = 'hover:bg-slate-50 dark:hover:bg-slate-800/50 transition border-b border-slate-100 dark:border-slate-800' + (h === next ? ' bg-emerald-500/10' : '');
+        tr.innerHTML = `
+          <td class="py-2.5 px-4 font-semibold text-slate-800 dark:text-slate-200">${esc(h.en)}${h === next ? ' <span class="text-[10px] text-emerald-600">● next</span>' : ''}</td>
+          <td class="py-2.5 px-4 font-bold text-emerald-700 dark:text-emerald-400 amharic-text">${esc(h.am)}</td>
+          <td class="py-2.5 px-4 font-bold text-amber-600">${e.day} ${ETH_MONTHS_EN[e.month - 1]} ${e.year}</td>
+          <td class="py-2.5 px-4 font-bold text-blue-600">${g.day}/${g.month}/${g.year} <span class="text-slate-400 font-medium">${WEEKDAYS_EN[weekdayIndex(h.jdn)].slice(0, 3)}</span></td>
+          <td class="py-2.5 px-4"><span class="px-2 py-0.5 rounded-full text-[10px] font-semibold ${isFast ? 'bg-purple-500/15 text-purple-700 dark:text-purple-300' : 'bg-slate-100 dark:bg-slate-800'}">${esc(h.type)}</span></td>
+          <td class="py-2.5 px-4 text-right whitespace-nowrap"><button onclick="hOpenForm(${idx})" class="px-2 py-1 rounded-lg text-[11px] font-semibold bg-slate-100 dark:bg-slate-800 hover:bg-amber-500/20" title="Edit">✎ Edit</button> <button onclick="hDelete(${idx})" class="px-2 py-1 rounded-lg text-[11px] font-semibold bg-red-500/10 text-red-600 hover:bg-red-500/20" title="Delete">🗑</button></td>`;
+        tbody.appendChild(tr);
+      });
+      if (!matches) tbody.innerHTML = '<tr><td colspan="6" class="py-6 px-4 text-center text-slate-500">No matching entries for this year and filter.</td></tr>';
+      const s0 = jdnToGregorian(ethToJdn(eYear, 1, 1)), s1 = jdnToGregorian(ethToJdn(eYear + 1, 1, 1) - 1);
+      const fasts = L.filter(h => h.type === 'Fast').length;
+      stEl.className = 'text-xs font-semibold text-slate-600 dark:text-slate-300 px-1';
+      stEl.innerText = `Ethiopian year ${eYear} E.C. (${s0.day}/${s0.month}/${s0.year} – ${s1.day}/${s1.month}/${s1.year}) · ${isEthLeap(eYear) ? 'Leap year (Pagume 6)' : 'Standard year'} · ${L.length} events (${fasts} fasts)` + (matches !== L.length ? ` · showing ${matches}` : '') + (next ? ` · Next: ${next.en} on ${next.g ? next.g.day + '/' + next.g.month + '/' + next.g.year : ''}` : '');
+      return true;
+    }
+
+    function hMatch(h) {
+      const q = (document.getElementById('hSearch').value || '').trim().toLowerCase(), f = document.getElementById('hFilter').value;
+      if (q && !((h.en + ' ' + h.am).toLowerCase().includes(q))) return false;
+      if (f === 'all') return true;
+      if (f === 'Religious') return h.type.startsWith('Religious');
+      return h.type === f;
+    }
+    function findHolidays() {
+      if (renderHolidays() === false) { showToast('Enter a valid Ethiopian year (1–9990)', 'error'); return; }
+      showToast(`Found ${holidayRows.length} events for ${document.getElementById('holidayYearInput').value} E.C.`, 'success');
+    }
+    function hStepYear(dir) {
+      const inp = document.getElementById('holidayYearInput');
+      const t = todayGreg(), cur = jdnToEth(gregorianToJdn(t.year, t.month, t.day)).year;
+      inp.value = dir === 0 ? cur : (parseInt(inp.value, 10) || cur) + dir;
+      renderHolidays();
+    }
+
+    function exportHolidaysICS() {
+      if (!holidayRows.length) renderHolidays();
+      const p2 = n => String(n).padStart(2, '0'), fmt = g => `${g.year}${p2(g.month)}${p2(g.day)}`;
+      const ev = holidayRows.filter(hMatch).map((h, k) => {
+        const end = jdnToGregorian(h.jdn + (h.len || 1));
+        return ['BEGIN:VEVENT', `UID:calsync-${h.jdn}-${k}@calsync`, `DTSTAMP:${fmt(todayGreg())}T000000Z`, `DTSTART;VALUE=DATE:${fmt(h.g)}`, `DTEND;VALUE=DATE:${fmt(end)}`, `SUMMARY:${h.en.replace(/[,;]/g, ' ')}`, `DESCRIPTION:${h.am} - ${h.e.day} ${ETH_MONTHS_EN[h.e.month - 1]} ${h.e.year} E.C.`, 'END:VEVENT'].join('\r\n');
+      });
+      const ics = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//CalSync//EN', ...ev, 'END:VCALENDAR'].join('\r\n');
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(new Blob([ics], { type: 'text/calendar' }));
+      a.download = `ethiopian-holidays-${document.getElementById('holidayYearInput').value}.ics`;
+      a.click();
+    }
+
+    // ===== WORLD TIME =====
+    const WC_DATA = 'AF Asia/Kabul,AL Europe/Tirane,DZ Africa/Algiers,AD Europe/Andorra,AO Africa/Luanda,AG America/Antigua,AR America/Argentina/Buenos_Aires,AM Asia/Yerevan,AU Australia/Sydney,AT Europe/Vienna,AZ Asia/Baku,BS America/Nassau,BH Asia/Bahrain,BD Asia/Dhaka,BB America/Barbados,BY Europe/Minsk,BE Europe/Brussels,BZ America/Belize,BJ Africa/Porto-Novo,BT Asia/Thimphu,BO America/La_Paz,BA Europe/Sarajevo,BW Africa/Gaborone,BR America/Sao_Paulo,BN Asia/Brunei,BG Europe/Sofia,BF Africa/Ouagadougou,BI Africa/Bujumbura,CV Atlantic/Cape_Verde,KH Asia/Phnom_Penh,CM Africa/Douala,CA America/Toronto,CF Africa/Bangui,TD Africa/Ndjamena,CL America/Santiago,CN Asia/Shanghai,CO America/Bogota,KM Indian/Comoro,CG Africa/Brazzaville,CD Africa/Kinshasa,CR America/Costa_Rica,CI Africa/Abidjan,HR Europe/Zagreb,CU America/Havana,CY Asia/Nicosia,CZ Europe/Prague,DK Europe/Copenhagen,DJ Africa/Djibouti,DM America/Dominica,DO America/Santo_Domingo,EC America/Guayaquil,EG Africa/Cairo,SV America/El_Salvador,GQ Africa/Malabo,ER Africa/Asmara,EE Europe/Tallinn,SZ Africa/Mbabane,ET Africa/Addis_Ababa,FJ Pacific/Fiji,FI Europe/Helsinki,FR Europe/Paris,GA Africa/Libreville,GM Africa/Banjul,GE Asia/Tbilisi,DE Europe/Berlin,GH Africa/Accra,GR Europe/Athens,GD America/Grenada,GT America/Guatemala,GN Africa/Conakry,GW Africa/Bissau,GY America/Guyana,HT America/Port-au-Prince,HN America/Tegucigalpa,HU Europe/Budapest,IS Atlantic/Reykjavik,IN Asia/Kolkata,ID Asia/Jakarta,IR Asia/Tehran,IQ Asia/Baghdad,IE Europe/Dublin,IL Asia/Jerusalem,IT Europe/Rome,JM America/Jamaica,JP Asia/Tokyo,JO Asia/Amman,KZ Asia/Almaty,KE Africa/Nairobi,KI Pacific/Tarawa,KP Asia/Pyongyang,KR Asia/Seoul,KW Asia/Kuwait,KG Asia/Bishkek,LA Asia/Vientiane,LV Europe/Riga,LB Asia/Beirut,LS Africa/Maseru,LR Africa/Monrovia,LY Africa/Tripoli,LI Europe/Vaduz,LT Europe/Vilnius,LU Europe/Luxembourg,MG Indian/Antananarivo,MW Africa/Blantyre,MY Asia/Kuala_Lumpur,MV Indian/Maldives,ML Africa/Bamako,MT Europe/Malta,MH Pacific/Majuro,MR Africa/Nouakchott,MU Indian/Mauritius,MX America/Mexico_City,FM Pacific/Pohnpei,MD Europe/Chisinau,MC Europe/Monaco,MN Asia/Ulaanbaatar,ME Europe/Podgorica,MA Africa/Casablanca,MZ Africa/Maputo,MM Asia/Yangon,NA Africa/Windhoek,NR Pacific/Nauru,NP Asia/Kathmandu,NL Europe/Amsterdam,NZ Pacific/Auckland,NI America/Managua,NE Africa/Niamey,NG Africa/Lagos,MK Europe/Skopje,NO Europe/Oslo,OM Asia/Muscat,PK Asia/Karachi,PW Pacific/Palau,PA America/Panama,PG Pacific/Port_Moresby,PY America/Asuncion,PE America/Lima,PH Asia/Manila,PL Europe/Warsaw,PT Europe/Lisbon,QA Asia/Qatar,RO Europe/Bucharest,RU Europe/Moscow,RW Africa/Kigali,KN America/St_Kitts,LC America/St_Lucia,VC America/St_Vincent,WS Pacific/Apia,SM Europe/San_Marino,ST Africa/Sao_Tome,SA Asia/Riyadh,SN Africa/Dakar,RS Europe/Belgrade,SC Indian/Mahe,SL Africa/Freetown,SG Asia/Singapore,SK Europe/Bratislava,SI Europe/Ljubljana,SB Pacific/Guadalcanal,SO Africa/Mogadishu,ZA Africa/Johannesburg,SS Africa/Juba,ES Europe/Madrid,LK Asia/Colombo,SD Africa/Khartoum,SR America/Paramaribo,SE Europe/Stockholm,CH Europe/Zurich,SY Asia/Damascus,TJ Asia/Dushanbe,TZ Africa/Dar_es_Salaam,TH Asia/Bangkok,TL Asia/Dili,TG Africa/Lome,TO Pacific/Tongatapu,TT America/Port_of_Spain,TN Africa/Tunis,TR Europe/Istanbul,TM Asia/Ashgabat,TV Pacific/Funafuti,UG Africa/Kampala,UA Europe/Kyiv,AE Asia/Dubai,GB Europe/London,US America/New_York,UY America/Montevideo,UZ Asia/Tashkent,VU Pacific/Efate,VA Europe/Vatican,VE America/Caracas,VN Asia/Ho_Chi_Minh,YE Asia/Aden,ZM Africa/Lusaka,ZW Africa/Harare,PS Asia/Gaza,TW Asia/Taipei';
+    const WC = WC_DATA.split(',').map(x => x.split(' '));
+    let wcTargets = ['ET', 'US', 'GB', 'SA', 'AE', 'CN', 'DE', 'KE'];
+    let wcText = '';
+    const wcName = (c) => { try { return new Intl.DisplayNames(['en'], { type: 'region' }).of(c) || c; } catch (e) { return c; } };
+    const wcKeyLabel = (k) => k.includes('/') ? k.replace(/_/g, ' ') : wcName(k);
+    const wcZone = (k) => { if (k.includes('/')) return k; const r = WC.find(x => x[0] === k); return r ? r[1] : 'UTC'; };
+
+    function tzOffsetMin(zone, ms) {
+      const f = new Intl.DateTimeFormat('en-US', { timeZone: zone, hourCycle: 'h23', year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric' });
+      const o = {}; f.formatToParts(new Date(ms)).forEach(p => o[p.type] = +p.value);
+      return Math.round((Date.UTC(o.year, o.month - 1, o.day, o.hour, o.minute, o.second) - Math.floor(ms / 1000) * 1000) / 60000);
+    }
+    function tzParts(zone, ms) {
+      const off = tzOffsetMin(zone, ms), d = new Date(ms + off * 60000);
+      return { y: d.getUTCFullYear(), mo: d.getUTCMonth() + 1, d: d.getUTCDate(), h: d.getUTCHours(), mi: d.getUTCMinutes(), s: d.getUTCSeconds(), off };
+    }
+    function zonedToUtc(zone, y, mo, d, h, mi) { // wall-clock in zone -> UTC ms (DST safe)
+      const guess = Date.UTC(y, mo - 1, d, h, mi);
+      let ms = guess - tzOffsetMin(zone, guess) * 60000;
+      ms = guess - tzOffsetMin(zone, ms) * 60000;
+      return ms;
+    }
+    const fmtOff = (m) => `UTC${m < 0 ? '−' : '+'}${String(Math.floor(Math.abs(m) / 60)).padStart(2, '0')}:${String(Math.abs(m) % 60).padStart(2, '0')}`;
+    const fmtDiff = (m) => m === 0 ? 'same time' : `${Math.floor(Math.abs(m) / 60)}h${Math.abs(m) % 60 ? ' ' + Math.abs(m) % 60 + 'm' : ''} ${m > 0 ? 'ahead of' : 'behind'} source`;
+
+    function initWorld() {
+      const opts = (sel, withBlank) => {
+        const cs = WC.map(r => [r[0], wcName(r[0])]).sort((a, b) => a[1].localeCompare(b[1]));
+        let h = '<optgroup label="Countries">' + cs.map(c => `<option value="${c[0]}">${c[1]}</option>`).join('') + '</optgroup>';
+        let zs = []; try { zs = Intl.supportedValuesOf('timeZone'); } catch (e) {}
+        h += '<optgroup label="All time zones (cities)">' + zs.map(z => `<option value="${z}">${z.replace(/_/g, ' ')}</option>`).join('') + '</optgroup>';
+        document.getElementById(sel).innerHTML = h;
+      };
+      opts('wcSource'); opts('wcAdd');
+      document.getElementById('wcSource').value = 'ET';
+      document.getElementById('wcAdd').value = 'JP';
+      renderWorld();
+      setInterval(() => { if (!document.getElementById('wcWhen').value && !document.getElementById('contentWorld').classList.contains('hidden')) renderWorld(); }, 1000);
+    }
+    function wcAddTarget() { const v = document.getElementById('wcAdd').value; if (!wcTargets.includes(v)) wcTargets.push(v); renderWorld(); }
+    function wcRemove(k) { wcTargets = wcTargets.filter(x => x !== k); renderWorld(); }
+    function copyWorld() { copyToClipboard(wcText); showToast('Results copied', 'success'); }
+
+    function renderWorld() {
+      const srcKey = document.getElementById('wcSource').value, srcZone = wcZone(srcKey);
+      const w = document.getElementById('wcWhen').value;
+      let ms = Date.now();
+      if (w) { const m = /^(\d+)-(\d+)-(\d+)T(\d+):(\d+)/.exec(w); if (m) ms = zonedToUtc(srcZone, +m[1], +m[2], +m[3], +m[4], +m[5]); }
+      const sp = tzParts(srcZone, ms);
+      const card = (key, zone, isSrc) => {
+        const t = tzParts(zone, ms), j = gregorianToJdn(t.y, t.mo, t.d), e = jdnToEth(j), hj = jdnToHijri(j);
+        const pad = n => String(n).padStart(2, '0'), wd = weekdayIndex(j);
+        const h12 = t.h % 12 || 12, ampm = t.h < 12 ? 'AM' : 'PM', eh = ((t.h + 6) % 12) || 12;
+        const dayRel = j - gregorianToJdn(sp.y, sp.mo, sp.d);
+        const rel = isSrc ? 'SOURCE' : (dayRel === 0 ? 'same day' : dayRel > 0 ? 'next day (+1)' : 'previous day (−1)');
+        const txt = `${wcKeyLabel(key)}: ${pad(t.h)}:${pad(t.mi)}:${pad(t.s)} ${WEEKDAYS_EN[wd]} ${t.d}/${t.mo}/${t.y} | ${e.day} ${ETH_MONTHS_EN[e.month - 1]} ${e.year} E.C. | ${fmtOff(t.off)}`;
+        return { txt, html: `
+          <div class="flex items-start justify-between gap-2"><div><div class="text-sm font-bold">${wcKeyLabel(key)}</div><div class="text-[11px] text-slate-500">${zone.replace(/_/g, ' ')} · ${fmtOff(t.off)}</div></div>
+            ${isSrc ? '' : `<button onclick="wcRemove('${key}')" class="text-slate-400 hover:text-red-500 text-xs" aria-label="Remove">✕</button>`}</div>
+          <div class="text-3xl font-extrabold font-mono tracking-tight">${pad(t.h)}:${pad(t.mi)}<span class="text-lg text-slate-400">:${pad(t.s)}</span> <span class="text-xs font-semibold text-slate-500">${h12}:${pad(t.mi)} ${ampm}</span></div>
+          <div class="text-sm font-semibold">${WEEKDAYS_EN[wd]}, ${t.d} ${GREG_MONTH_FULL[t.mo - 1]} ${t.y}</div>
+          <div class="text-xs amharic-text text-amber-700 dark:text-amber-400 font-semibold">${ETH_WEEKDAYS_AM[wd]} · ${e.day} ${ETH_MONTHS_AM[e.month - 1]} ${e.year} ዓ.ም · ሰዓት ${eh}:${pad(t.mi)}</div>
+          <div class="text-[11px] text-slate-500">Hijri ${hj.day}/${hj.month}/${hj.year} AH</div>
+          <div class="text-[11px] font-semibold ${isSrc ? 'text-emerald-600' : 'text-indigo-600 dark:text-indigo-400'}">${isSrc ? '' : fmtDiff(t.off - sp.off) + ' · '}${rel}</div>` };
+      };
+      const sc = card(srcKey, srcZone, true);
+      document.getElementById('wcSourceCard').innerHTML = '<div class="space-y-1">' + sc.html + '</div>';
+      const lines = [sc.txt];
+      document.getElementById('wcGrid').innerHTML = wcTargets.filter(k => k !== srcKey).map(k => {
+        const c = card(k, wcZone(k), false); lines.push(c.txt);
+        return `<div class="p-4 rounded-2xl glass-card border border-slate-200 dark:border-slate-800 space-y-1">${c.html}</div>`;
+      }).join('');
+      wcText = lines.join('\n');
+    }
+
+    function renderTodayStrip() {
+      const t = todayGreg(), j = gregorianToJdn(t.year, t.month, t.day), e = jdnToEth(j), h = jdnToHijri(j), wd = weekdayIndex(j);
+      document.getElementById('todayStrip').innerHTML =
+        `<span>📅 ${WEEKDAYS_EN[wd]}, ${t.day} ${GREG_MONTH_FULL[t.month - 1]} ${t.year}</span><span class="amharic-text text-amber-600">🇪🇹 ${ETH_WEEKDAYS_AM[wd]} ${e.day} ${ETH_MONTHS_AM[e.month - 1]} ${e.year} ዓ.ም</span><span>🌙 ${h.day}/${h.month}/${h.year} AH</span>`;
+    }
+
+    // 8. DATE MATH CALCULATOR
+    function calculateDateMath() {
+      const out = document.getElementById('mathResultGreg');
+      const outEth = document.getElementById('mathResultEth');
+      const meta = document.getElementById('mathResultMeta');
+      const start = parseISOParts(document.getElementById('mathStartDate').value);
+      if (!start || !isValidDate('gregorian', start.year, start.month, start.day)) {
+        out.innerText = '--'; outEth.innerText = '--'; if (meta) meta.innerText = ''; return;
+      }
+
+      const op = document.getElementById('mathOperation').value;
+      const unit = document.getElementById('mathUnit').value;
+      const cal = document.getElementById('mathCalSystem') ? document.getElementById('mathCalSystem').value : 'gregorian';
+      let amt = Math.trunc(Number(document.getElementById('mathAmount').value));
+      if (!isFinite(amt)) amt = 0;
+      const sign = op === 'add' ? 1 : -1;
+
+      const sJdn = gregorianToJdn(start.year, start.month, start.day);
+      let rJdn, clamped = false;
+
+      if (unit === 'days' || unit === 'weeks') {
+        rJdn = sJdn + sign * amt * (unit === 'weeks' ? 7 : 1);
+      } else {
+        const base = cal === 'ethiopian' ? jdnToEth(sJdn) : start;
+        const months = (unit === 'years' ? CAL_MONTHS[cal] : 1) * amt * sign;
+        const res = addMonthsCal(cal, base, months);
+        clamped = res.day < base.day;
+        rJdn = toJdn(cal, res);
+      }
+
+      const g = jdnToGregorian(rJdn);
+      if (g.year < 1 || g.year > 9999) {
+        out.innerText = 'Out of supported range'; outEth.innerText = '--'; if (meta) meta.innerText = ''; return;
+      }
+      const e = jdnToEth(rJdn);
+      const wd = weekdayIndex(rJdn);
+
+      out.innerText = `${g.day}/${g.month}/${g.year} (${WEEKDAYS_EN[wd]}, ${g.day} ${GREG_MONTH_FULL[g.month - 1]} ${g.year})`;
+      outEth.innerText = `${e.day} ${ETH_MONTHS_AM[e.month - 1]} ${e.year} ዓ.ም`;
+      if (meta) {
+        const diff = Math.abs(rJdn - sJdn);
+        meta.innerText = `${WEEKDAYS_EN[wd]} / ${ETH_WEEKDAYS_AM[wd]} · ${diff.toLocaleString()} day${diff === 1 ? '' : 's'} ${rJdn >= sJdn ? 'after' : 'before'} start` +
+          (clamped ? ' · day adjusted to the last day of the target month' : '');
+      }
+    }
+
+    // Duration between two dates
+    function calculateDuration() {
+      const a = parseISOParts(document.getElementById('durStartDate').value);
+      const b = parseISOParts(document.getElementById('durEndDate').value);
+      const note = document.getElementById('durNote');
+      const ids = ['durGregYMD', 'durEthYMD', 'durTotalDays', 'durWeeks', 'durBusinessDays'];
+      if (!a || !b || !isValidDate('gregorian', a.year, a.month, a.day) || !isValidDate('gregorian', b.year, b.month, b.day)) {
+        ids.forEach(id => document.getElementById(id).innerText = '--'); note.innerText = ''; return;
+      }
+      const includeEnd = document.getElementById('durIncludeEnd').checked;
+      let aJ = gregorianToJdn(a.year, a.month, a.day);
+      let bJ = gregorianToJdn(b.year, b.month, b.day);
+      let swapped = false;
+      if (aJ > bJ) { const t = aJ; aJ = bJ; bJ = t; swapped = true; }
+      const endJ = bJ + (includeEnd ? 1 : 0);
+
+      const gy = diffYMD('gregorian', jdnToGregorian(aJ), jdnToGregorian(endJ));
+      const ey = diffYMD('ethiopian', jdnToEth(aJ), jdnToEth(endJ));
+      const total = endJ - aJ;
+
+      // Weekdays (Mon-Fri) in [aJ, endJ)
+      let biz = 0;
+      const fullWeeks = Math.floor(total / 7);
+      biz = fullWeeks * 5;
+      for (let j = aJ + fullWeeks * 7; j < endJ; j++) { const w = weekdayIndex(j); if (w >= 1 && w <= 5) biz++; }
+
+      document.getElementById('durGregYMD').innerText = `${gy.years}y ${gy.months}m ${gy.days}d`;
+      document.getElementById('durEthYMD').innerText = `${ey.years} ዓመት፤ ${ey.months} ወር፤ ${ey.days} ቀን`;
+      document.getElementById('durTotalDays').innerText = total.toLocaleString();
+      document.getElementById('durWeeks').innerText = `${fullWeeks.toLocaleString()} wk ${total % 7} d`;
+      document.getElementById('durBusinessDays').innerText = biz.toLocaleString();
+      note.innerText = (swapped ? 'Start was after end, so the dates were swapped. ' : '') +
+        (includeEnd ? 'End date included in the count.' : 'End date not counted (elapsed time).');
+    }
+
+    // 9. GE'EZ STUDIO
+    function updateGeezStudio() {
+      const val = parseInt(document.getElementById('geezStudioInput').value, 10);
+      if (isNaN(val)) {
+        document.getElementById('geezStudioOutput').innerText = "--";
+        return;
+      }
+      document.getElementById('geezStudioOutput').innerText = toGeez(val);
+    }
+
+    function updateSingleDateCards(dateObj) {
+      if (!dateObj) return;
+
+      const gYear = dateObj.getFullYear();
+      const gMonth = dateObj.getMonth() + 1;
+      const gDay = dateObj.getDate();
+      const jdn = gregorianToJdn(gYear, gMonth, gDay);
+
+      const eth = jdnToEth(jdn);
+      const ethMonthEn = ETH_MONTHS_EN[eth.month - 1];
+      const ethMonthAm = ETH_MONTHS_AM[eth.month - 1];
+
+      document.getElementById('cardEthMain').innerText = `${eth.day} ${ethMonthEn} ${eth.year}`;
+      document.getElementById('cardEthAmharic').innerText = `${eth.day} ${ethMonthAm} ${eth.year} ዓ.ም`;
+      document.getElementById('cardEthGeez').innerText = `${toGeez(eth.day)} ${ethMonthAm} ${toGeez(eth.year)}`;
+
+      const dayOfWeekIndex = weekdayIndex(jdn);
+      document.getElementById('cardEthWeekday').innerText = ETH_WEEKDAYS_AM[dayOfWeekIndex];
+      document.getElementById('cardEthLeap').innerText = isEthLeap(eth.year) ? "Leap (ጳጉሜ 6)" : "Standard (ጳጉሜ 5)";
+
+      document.getElementById('cardGregMain').innerText = `${gDay}/${gMonth}/${gYear}`;
+      document.getElementById('cardGregLong').innerText = `${WEEKDAYS_EN[dayOfWeekIndex]}, ${GREG_MONTH_FULL[gMonth - 1]} ${gDay}, ${gYear}`;
+      document.getElementById('cardGregDayOfYear').innerText = jdn - gregorianToJdn(gYear, 1, 1) + 1;
+      document.getElementById('cardJdn').innerText = jdn;
+
+      const hijri = jdnToHijri(jdn);
+      document.getElementById('cardHijriMain').innerText = `${hijri.day}/${hijri.month}/${hijri.year} AH`;
+      document.getElementById('cardHijriLong').innerText = `${hijri.day} ${HIJRI_MONTHS[hijri.month - 1]} ${hijri.year} AH`;
+    }
+
+    function onSinglePickerChange() {
+      const dateObj = localDateFromISO(document.getElementById('singleGregPicker').value);
+      if (dateObj) updateSingleDateCards(dateObj);
+    }
+
+    function shiftSingleDate(days) {
+      const picker = document.getElementById('singleGregPicker');
+      const d = localDateFromISO(picker.value) || new Date();
+      d.setHours(0, 0, 0, 0);
+      d.setDate(d.getDate() + days);
+      picker.value = toLocalISO(d);
+      updateSingleDateCards(d);
+    }
+
+    function setSingleDateToday() {
+      const today = new Date();
+      document.getElementById('singleGregPicker').value = toLocalISO(today);
+      updateSingleDateCards(today);
+    }
+
+    function switchTab(tabId) {
+      const tabs = ['batch', 'single', 'age', 'time', 'world', 'holidays', 'math', 'excel', 'guide'];
+      tabs.forEach(t => {
+        const content = document.getElementById(`content${t.charAt(0).toUpperCase() + t.slice(1)}`);
+        const btn = document.getElementById(`tab${t.charAt(0).toUpperCase() + t.slice(1)}`);
+        
+        if (t === tabId) {
+          content.classList.remove('hidden');
+          btn.className = "tab-btn px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold flex items-center space-x-1.5 bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border border-emerald-500/20";
+        } else {
+          content.classList.add('hidden');
+          btn.className = "tab-btn px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium flex items-center space-x-1.5 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800";
+        }
+      });
+    }
+
+    function copyToClipboard(text) {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text);
+      } else {
+        const textarea = document.createElement('textarea');
+        textarea.value = text;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+      }
+    }
+
+    function copyCode(elementId) {
+      const code = document.getElementById(elementId).innerText;
+      copyToClipboard(code);
+      showToast("Code copied to clipboard!", "success");
+    }
+
+    function showToast(message, type = "info") {
+      const container = document.getElementById('toastContainer');
+      const toast = document.createElement('div');
+      toast.className = `px-4 py-2.5 rounded-xl shadow-lg text-xs font-semibold text-white pointer-events-auto flex items-center gap-2 transition-all duration-300 transform translate-y-2 ${
+        type === 'success' ? 'bg-emerald-600' : type === 'error' ? 'bg-red-600' : 'bg-slate-800'
+      }`;
+      toast.innerHTML = `<span>${message}</span>`;
+      container.appendChild(toast);
+
+      setTimeout(() => {
+        toast.classList.add('opacity-0', 'translate-y-4');
+        setTimeout(() => toast.remove(), 300);
+      }, 2500);
+    }
+
+    // PWA & Service Worker Initialization
+    function initPWA() {
+      const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (isDark) document.documentElement.classList.add('dark');
+
+      document.getElementById('themeToggleBtn').addEventListener('click', () => {
+        document.documentElement.classList.toggle('dark');
+      });
+
+      let deferredPrompt;
+      window.addEventListener('beforeinstallprompt', (e) => {
+        e.preventDefault();
+        deferredPrompt = e;
+        const btn = document.getElementById('installPwaBtn');
+        btn.classList.remove('hidden');
+        btn.classList.add('flex');
+        btn.addEventListener('click', () => {
+          deferredPrompt.prompt();
+          deferredPrompt.userChoice.then(() => {
+            btn.classList.add('hidden');
+          });
+        });
+      });
+
+      // Default setups
+      setSingleDateToday();
+      loadSampleData('ethiopian');
+      
+      // Default Date Math Initializer
+      const todayStr = toLocalISO(new Date());
+      document.getElementById('mathStartDate').value = todayStr;
+      calculateDateMath();
+      document.getElementById('durStartDate').value = todayStr;
+      document.getElementById('durEndDate').value = todayStr;
+      calculateDuration();
+
+      // Default Age Setup
+      document.getElementById('ageBirthPicker').value = "1995-09-11";
+      calculateAge();
+
+      // Ethiopian Clock tick interval
+      updateLiveEthClock();
+      setInterval(updateLiveEthClock, 1000);
+      convertEthTime();
+
+      // Holiday Initializer
+      { const t0 = todayGreg(); document.getElementById('holidayYearInput').value = jdnToEth(gregorianToJdn(t0.year, t0.month, t0.day)).year; }
+      renderHolidays();
+      initWorld();
+      renderTodayStrip();
+
+      // Ge'ez Studio Initializer
+      updateGeezStudio();
+
+    }
+
+    window.onload = initPWA;
+  </script>
+</body>
+</html>
